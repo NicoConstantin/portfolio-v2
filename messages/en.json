@@ -7,6 +7,11 @@
     "about": "About",
     "projects": "Projects",
     "skills": "Skills",
-    "contact": "contact"
+    "contact": "Contact",
+    "Languages": {
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French"
+    }
   }
 }

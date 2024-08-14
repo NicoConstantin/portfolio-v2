@@ -1,5 +1,17 @@
 {
   "HomePage": {
-    "title": "Bonjour!"
+    "title": "Bonjour, le monde!"
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À propos de moi",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "Languages": {
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français"
+    }
   }
 }
