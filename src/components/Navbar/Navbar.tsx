@@ -3,16 +3,7 @@
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { CgMenu, CgClose } from 'react-icons/cg';
-import {
-  MenuItem,
-  MenuList,
-  Menu,
-  IconButton,
-  MenuButton,
-  SlideFade,
-  Slide,
-  Box,
-} from '@chakra-ui/react';
+import { MenuItem, MenuList, Menu, IconButton, MenuButton, Slide } from '@chakra-ui/react';
 import { PiCodeDuotone } from 'react-icons/pi';
 import { MdLanguage } from 'react-icons/md';
 import { Link } from '@/navigation';
@@ -77,7 +68,7 @@ export default function Navbar(): JSX.Element {
             <MenuList bg="black" color="white" w="100%" variant="elevated">
               {langOptions.map((lng: string) => {
                 return (
-                  <Link href="/" locale={lng}>
+                  <Link href="/" locale={lng} key={lng}>
                     <MenuItem key={lng} bg="black" color="white">
                       {t(`Languages.${lng}`)}
                     </MenuItem>
