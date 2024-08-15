@@ -1,12 +1,21 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat, Bebas_Neue } from 'next/font/google';
 import { Providers } from '@/providers/Providers';
 import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import { locales } from '@/locales';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
-const inter = Inter({ subsets: ['latin'] });
+const bebasNeue = Bebas_Neue({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-bebas-neue',
+});
+const montserrat = Montserrat({
+  weight: ['400', '700'], // Specify the weights you need
+  subsets: ['latin'], // Specify the subsets you need
+  variable: '--font-montserrat',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -29,11 +38,11 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${inter.className} from-light-black flex flex-col items-center justify-center bg-gradient-to-b to-black`}
+        className={`${montserrat.variable} ${bebasNeue.variable} from-light-black flex flex-col items-center justify-center bg-gradient-to-b to-black`}
       >
         <Providers>
           <Navbar />
-          <main className={`h-full w-full max-w-screen-xl p-4 md:px-6`}>{children}</main>
+          <main className={`h-full w-full max-w-screen-xl px-4 md:px-6`}>{children}</main>
         </Providers>
       </body>
     </html>

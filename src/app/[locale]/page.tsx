@@ -5,7 +5,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   unstable_setRequestLocale(locale);
 
   return (
-    <div className="flex min-h-screen flex-col pt-12">
+    <div className="flex h-full min-h-screen flex-col">
       <Header />
     </div>
   );

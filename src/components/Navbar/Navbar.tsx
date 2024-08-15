@@ -39,7 +39,7 @@ export default function Navbar(): JSX.Element {
               <div className="flex w-full items-center justify-center gap-x-2">
                 {langOptions.map((lng: string) => {
                   return (
-                    <Link href="/" locale={lng}>
+                    <Link href="/" locale={lng} key={lng}>
                       {t(`Languages.${lng}`)}
                     </Link>
                   );
@@ -65,7 +65,7 @@ export default function Navbar(): JSX.Element {
               icon={<MdLanguage />}
               variant="none"
             />
-            <MenuList bg="black" color="white" w="100%" variant="elevated">
+            <MenuList bg="black" color="white" w="100%">
               {langOptions.map((lng: string) => {
                 return (
                   <Link href="/" locale={lng} key={lng}>

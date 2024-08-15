@@ -16,6 +16,13 @@ const config: Config = {
         'light-black': '#121212',
         black: '#0A0A0A',
       },
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'sans-serif'], // Use the variable name for the font
+        bebas: ['var(--font-bebas-neue)', 'sans-serif'], // Use the variable name for the font
+      },
+      animation: {
+        'spin-slow': 'spin 25s linear infinite',
+      },
     },
   },
   plugins: [],
