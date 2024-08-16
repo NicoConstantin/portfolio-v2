@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
-import { Montserrat, Bebas_Neue } from 'next/font/google';
+import { Montserrat, Roboto } from 'next/font/google';
 import { Providers } from '@/providers/Providers';
 import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import { locales } from '@/locales';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
-const bebasNeue = Bebas_Neue({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-bebas-neue',
+const roboto = Roboto({
+  weight: ['400', '700'], // Add the weights you need
+  style: ['normal', 'italic'], // Optionally add styles
+  subsets: ['latin'], // Choose subsets
+  display: 'swap', // Control the font display strategy
+  variable: '--font-roboto',
 });
 const montserrat = Montserrat({
   weight: ['400', '700'], // Specify the weights you need
@@ -38,11 +40,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${montserrat.variable} ${bebasNeue.variable} from-light-black flex flex-col items-center justify-center bg-gradient-to-b to-black`}
+        className={`${montserrat.variable} ${roboto.variable} from-light-black font-roboto scroll-y-n flex flex-col items-center justify-center bg-gradient-to-b to-black`}
       >
         <Providers>
           <Navbar />
-          <main className={`h-full w-full max-w-screen-xl px-4 md:px-6`}>{children}</main>
+          <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 md:px-8`}>
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

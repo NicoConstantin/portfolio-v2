@@ -18,10 +18,10 @@ const config: Config = {
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'], // Use the variable name for the font
-        bebas: ['var(--font-bebas-neue)', 'sans-serif'], // Use the variable name for the font
+        roboto: ['var(--font-roboto)', 'sans-serif'], // Use the variable name for the font
       },
       animation: {
-        'spin-slow': 'spin 25s linear infinite',
+        'spin-slow': 'spin 50s linear infinite',
       },
     },
   },
