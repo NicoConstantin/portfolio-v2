@@ -17,5 +17,9 @@
     "talkButton": "Discutons",
     "workButton": "Mon travail",
     "scroll": "Faites défiler vers le bas"
+  },
+  "About": {
+    "title": "À propos de moi",
+    "description": "Je suis développeur de logiciels avec plus de deux ans d'expérience, spécialisé en développement front-end avec Next.js, React et Redux. Diplômé en tant que développeur Full Stack, j'aime créer des solutions modernes et efficaces. Je viens de m'installer en Suisse, où je continue à développer mes compétences tout en m'adaptant à un nouvel environnement."
   }
 }
