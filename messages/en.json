@@ -25,33 +25,41 @@
   "Projects": {
     "title": "Projects",
     "techs": "Technologies used",
+    "mission": "Mission",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "crLotes": {
       "title": "CR Lotes",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "sosNails": {
       "title": "S.O.S nails",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     },
     "restaurant": {
       "title": "Restaurant",
-      "description": "Here goes a short description of the project"
+      "description": "Here goes a short description of the project",
+      "mission": "Here goes the mission of the project"
     }
   }
 }

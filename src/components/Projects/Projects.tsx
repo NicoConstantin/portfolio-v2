@@ -30,6 +30,7 @@ interface Project {
   alt: string;
   type: 'mobile' | 'desktop';
   techs: string[];
+  mission: boolean;
 }
 
 type IconMap = {
@@ -63,6 +64,7 @@ export default function Projects() {
       img: '/henry.png',
       alt: 'henry logo',
       type: 'desktop',
+      mission: true,
       techs: ['Javascript', 'HTML', 'CSS', 'React', 'Redux', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
     },
     {
@@ -70,6 +72,7 @@ export default function Projects() {
       img: '/lotes.png',
       alt: 'crlotes logo',
       type: 'desktop',
+      mission: true,
       techs: ['Javascript', 'HTML', 'CSS', 'React', 'TailwindCSS'],
     },
     {
@@ -77,6 +80,7 @@ export default function Projects() {
       img: '/musure1.jpg',
       alt: 'musure game screen',
       type: 'desktop',
+      mission: true,
       techs: ['Javascript', 'React', 'Redux', 'TailwindCSS', 'Firebase'],
     },
     {
@@ -84,6 +88,7 @@ export default function Projects() {
       img: '/musure2.png',
       alt: 'musure creator screen',
       type: 'desktop',
+      mission: true,
       techs: [
         'Javascript',
         'React',
@@ -101,6 +106,7 @@ export default function Projects() {
       img: '/provincia.png',
       alt: 'provinciaART logo',
       type: 'desktop',
+      mission: true,
       techs: [
         'Javascript',
         'React',
@@ -117,6 +123,7 @@ export default function Projects() {
       img: '/nails.jpg',
       alt: 'nails photo',
       type: 'desktop',
+      mission: true,
       techs: ['Typescript', 'React', 'MongoDB'],
     },
     {
@@ -124,6 +131,7 @@ export default function Projects() {
       img: '/restaurant.jpg',
       alt: 'restaurant photo',
       type: 'desktop',
+      mission: true,
       techs: [
         'Typescript',
         'React',
@@ -178,21 +186,31 @@ export default function Projects() {
 
       <Modal blockScrollOnMount={true} isOpen={isOpen} onClose={onClose} size={'full'}>
         <ModalOverlay />
-        <ModalContent className="flex flex-col gap-y-4 bg-neutral-950/95 px-6 py-12 text-white">
+        <ModalContent className="flex flex-col gap-y-16 bg-neutral-950/95 px-6 py-12 text-white">
           <CgClose className="absolute right-6 top-4 cursor-pointer" onClick={() => onClose()} />
-          <h3 className="text-3xl">{t(`${openProject?.key}.title`)}</h3>
-          <span>{t(`${openProject?.key}.description`)}</span>
-          <h4 className="text-xl">{t('techs')}</h4>
-          <div className="grid w-full grid-cols-4 place-items-center gap-x-4 gap-y-4">
-            {openProject?.techs.map((tech: string) => {
-              const IconComponent: IconType | undefined = iconMap[tech];
-              return IconComponent ? (
-                <div className="flex flex-col flex-wrap items-center justify-center gap-y-1">
-                  <IconComponent key={tech} className="text-xl" />
-                  <span>{tech}</span>
-                </div>
-              ) : null;
-            })}
+          <div className="flex flex-col gap-y-4">
+            <h3 className="text-3xl">{t(`${openProject?.key}.title`)}</h3>
+            <span>{t(`${openProject?.key}.description`)}</span>
+          </div>
+          <div className="flex flex-col gap-y-8">
+            <h4 className="text-xl">{t('techs')}</h4>
+            <div className="grid w-full grid-cols-4 place-items-center gap-x-4 gap-y-4">
+              {openProject?.techs.map((tech: string) => {
+                const IconComponent: IconType | undefined = iconMap[tech];
+                return IconComponent ? (
+                  <div className="flex flex-col flex-wrap items-center justify-center gap-y-1">
+                    <IconComponent key={tech} className="text-xl" />
+                    <span>{tech}</span>
+                  </div>
+                ) : null;
+              })}
+            </div>
+            {openProject?.mission && (
+              <div className="flex flex-col gap-y-4">
+                <h5 className="text-xl">{t('mission')}</h5>
+                <span>{t(`${openProject?.key}.mission`)}</span>
+              </div>
+            )}
           </div>
         </ModalContent>
       </Modal>
