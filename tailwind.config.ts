@@ -18,7 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'], // Use the variable name for the font
-        roboto: ['var(--font-roboto)', 'sans-serif'], // Use the variable name for the font
+        onest: ['var(--font-onest)', 'sans-serif'], // Use the variable name for the font
       },
       animation: {
         'spin-slow': 'spin 50s linear infinite',

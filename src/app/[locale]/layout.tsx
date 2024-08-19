@@ -1,22 +1,21 @@
 import type { Metadata } from 'next';
-import { Montserrat, Roboto } from 'next/font/google';
+import { Montserrat, Onest } from 'next/font/google';
 import { Providers } from '@/providers/Providers';
 import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import { locales } from '@/locales';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
-const roboto = Roboto({
-  weight: ['400', '700'], // Add the weights you need
-  style: ['normal', 'italic'], // Optionally add styles
-  subsets: ['latin'], // Choose subsets
-  display: 'swap', // Control the font display strategy
-  variable: '--font-roboto',
-});
 const montserrat = Montserrat({
   weight: ['400', '700'], // Specify the weights you need
   subsets: ['latin'], // Specify the subsets you need
   variable: '--font-montserrat',
+});
+
+const onest = Onest({
+  weight: ['400', '700'], // Specify the weights you need
+  subsets: ['latin'], // Specify the subsets you need
+  variable: '--font-onest', // Optional: Define a custom CSS variable
 });
 
 export const metadata: Metadata = {
@@ -40,8 +39,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${montserrat.variable} ${roboto.variable} from-light-black font-roboto scroll-y-n flex flex-col items-center justify-center bg-gradient-to-b to-black`}
+        className={`${montserrat.variable} ${onest.variable} font-onest flex flex-col items-center justify-center`}
       >
+        <div className="absolute top-0 -z-20 h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,220,220,0.2),rgba(255,255,255,0))]"></div>
         <Providers>
           <Navbar />
           <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 md:px-8`}>

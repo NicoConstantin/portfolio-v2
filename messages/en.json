@@ -21,5 +21,28 @@
   "About": {
     "title": "About me",
     "description": "I am a software developer with over two years of experience, specializing in front-end development with Next.js, React, and Redux. Graduated as a Full Stack Developer, I enjoy creating modern and efficient solutions. I recently moved to Switzerland, where I am continuing to develop my skills while adapting to a new environment."
+  },
+  "Projects": {
+    "title": "Projects",
+    "henry": {
+      "title": "Henry E-commerce",
+      "description": "Here goes a short description of the project"
+    },
+    "musureGame": {
+      "title": "MUSURE Game",
+      "description": "Here goes a short description of the project"
+    },
+    "musureCreator": {
+      "title": "MUSURE Creator",
+      "description": "Here goes a short description of the project"
+    },
+    "sosNails": {
+      "title": "S.O.S nails",
+      "description": "Here goes a short description of the project"
+    },
+    "restaurant": {
+      "title": "Restaurant",
+      "description": "Here goes a short description of the project"
+    }
   }
 }
