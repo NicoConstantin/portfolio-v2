@@ -24,7 +24,7 @@ export default function Navbar(): JSX.Element {
   };
 
   return (
-    <nav className="fixed top-0 z-50 flex h-12 w-full items-center justify-center bg-black/95 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
+    <nav className="fixed top-0 z-50 flex h-12 w-full items-center justify-center bg-neutral-950/80 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
       <div className="flex h-full w-full max-w-screen-xl items-center justify-between px-6 md:px-8">
         <PiCodeDuotone />
 
@@ -32,7 +32,7 @@ export default function Navbar(): JSX.Element {
         <div className="flex items-center md:hidden">
           <MenuIcon isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />
           <Slide in={isMenuOpen} direction={'top'} style={{ zIndex: 10 }}>
-            <div className="z-20 mt-12 flex flex-col items-center justify-start gap-y-4 rounded-b-md bg-black/95 p-10 text-white shadow-lg">
+            <div className="z-20 mt-12 flex flex-col items-center justify-start gap-y-4 rounded-b-md bg-neutral-950/80 p-10 text-white shadow-lg">
               {navOptions.map((option: string) => {
                 return (
                   <Link href={`#${option}`} key={option}>

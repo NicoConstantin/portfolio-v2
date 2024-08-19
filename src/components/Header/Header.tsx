@@ -7,11 +7,11 @@ import { TbFileCv } from 'react-icons/tb';
 
 export default function Header(): JSX.Element {
   const t = useTranslations('Header');
-  const baseClassButton: string = 'w-28 px-4 py-1.5 rounded-md transition duration-300 ease-in-out';
+  const baseClassButton: string = 'w-28 px-4 py-1.5 rounded-lg transition duration-300 ease-in-out';
   const iconClass: string =
     'text-2xl hover:text-[#C3C3C3] cursor-pointer transition duration-300 ease-in-out';
   return (
-    <div className="relative flex h-full min-h-dvh w-full flex-col pt-12">
+    <div className="relative flex h-full min-h-svh w-full flex-col pt-12">
       <Image
         src="/neon.svg"
         width={600}

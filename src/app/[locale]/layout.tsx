@@ -39,9 +39,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${montserrat.variable} ${onest.variable} font-onest flex flex-col items-center justify-center`}
+        className={`${montserrat.variable} ${onest.variable} font-onest flex flex-col items-center justify-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,220,220,0.2),rgba(255,255,255,0))]`}
       >
-        <div className="absolute top-0 -z-20 h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,220,220,0.2),rgba(255,255,255,0))]"></div>
+        {/* <div className="absolute top-0 -z-20 h-screen w-screen"></div> */}
         <Providers>
           <Navbar />
           <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 md:px-8`}>

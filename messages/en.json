@@ -24,8 +24,13 @@
   },
   "Projects": {
     "title": "Projects",
+    "techs": "Technologies used",
     "henry": {
       "title": "Henry E-commerce",
+      "description": "Here goes a short description of the project"
+    },
+    "crLotes": {
+      "title": "CR Lotes",
       "description": "Here goes a short description of the project"
     },
     "musureGame": {
@@ -34,6 +39,10 @@
     },
     "musureCreator": {
       "title": "MUSURE Creator",
+      "description": "Here goes a short description of the project"
+    },
+    "provincia": {
+      "title": "Provincia ART",
       "description": "Here goes a short description of the project"
     },
     "sosNails": {
