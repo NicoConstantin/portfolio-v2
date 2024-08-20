@@ -35,9 +35,12 @@ export default function Projects() {
 
       <ul className="flex w-full flex-wrap gap-2">
         {projectsSliced.map((ps: Project[]) => (
-          <div className="flex w-full gap-2 overflow-hidden">
+          <div className="flex w-full gap-2 overflow-hidden" key={ps[0].key}>
             {ps.map((p: Project) => (
-              <div className="h-40 flex-1 basis-5/12 cursor-pointer grayscale-[90%] transition-all duration-500 ease-in-out hover:basis-7/12 hover:grayscale-0">
+              <div
+                key={p.key}
+                className="h-40 flex-1 basis-5/12 cursor-pointer grayscale-[90%] transition-all duration-500 ease-in-out hover:basis-7/12 hover:grayscale-0"
+              >
                 <Image
                   src={p.img}
                   width={600}
@@ -65,7 +68,7 @@ export default function Projects() {
               <h4 className="text-xl">{t('techs')}</h4>
               <div className="grid w-full grid-cols-4 place-items-center gap-x-4 gap-y-4">
                 {openProject.techs.map((tech: Tech) => (
-                  <TechCombo tech={tech} />
+                  <TechCombo tech={tech} key={tech} />
                 ))}
               </div>
               {openProject.mission && (

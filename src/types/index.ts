@@ -33,3 +33,9 @@ export interface Project {
   techs: Tech[];
   mission: boolean;
 }
+
+export interface Referrer {
+  key: string;
+  name: string;
+  img: string;
+}

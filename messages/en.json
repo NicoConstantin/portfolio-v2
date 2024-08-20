@@ -61,5 +61,31 @@
       "description": "Here goes a short description of the project",
       "mission": "Here goes the mission of the project"
     }
+  },
+  "Recommendations": {
+    "title": "Testimonials",
+    "description": "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind",
+    "received": {
+      "tano": {
+        "headline": "Multi-Award Grant Winner 1x Top20 Dubai 1x Epic Games 1x Polygon 4x Argentina | Founder & CEO of MUSURE world",
+        "text": "Nico is one of the best players I have had the pleasure to work with! He always understands the problems, and he is always ready to solve them with a Lean perspective!/n I'm looking forward to keeping working with him!"
+      },
+      "fer": {
+        "headline": "Graphic, Multimedia & Product Designer | Tutor",
+        "text": "He was a great partner, with solid knowledge and proactivity in seeking solutions. His ability to work in a team and communication with other disciplines strengthened the creation of the solutions we needed"
+      },
+      "giu": {
+        "headline": "Project Management Profesional & Scrum Master Profesional",
+        "text": "Great analytical skills and assertive in explaining technical issues. A young and professional agilist threving the best in every Sprint."
+      },
+      "lino": {
+        "headline": "Creative Director, Producer, Digital & Social Media Strategist, Content Creator & Gamer",
+        "text": "Nico has high skills as a developer. Always attentive, responsive and proactive in solving any problem./n Our product grew thanks to his great contributions and insights./n A pleasure to work with you Nico!"
+      },
+      "agus": {
+        "headline": "Full Stack Developer",
+        "text": "A very proactive person willing to work as a team player and collaborator. Able to face any challenge to continue growing and developing as a professional."
+      }
+    }
   }
 }

@@ -73,7 +73,7 @@ export default function Navbar(): JSX.Element {
               {langOptions.map((lng: string) => {
                 return (
                   <Link href="/" locale={lng} key={lng}>
-                    <MenuItem key={lng} bg="black" color="white">
+                    <MenuItem bg="black" color="white">
                       {t(`Languages.${lng}`)}
                     </MenuItem>
                   </Link>
