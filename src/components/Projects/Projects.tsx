@@ -4,12 +4,9 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { CgClose } from 'react-icons/cg';
 import { Modal, ModalOverlay, ModalContent, useDisclosure } from '@chakra-ui/react';
-import { IconType } from 'react-icons'; // Import IconType from react-icons
 import { Project, Tech } from '@/types';
 import { projects } from '@/data/projects';
-import { iconMap } from '@/data/mapIconTech';
-
-//I have to move the types and interfaces to /src/types, IconMap should be a key => object , every object should have icon, and text fixed by key, investigate how to do it, if i put javascript should return the icon and the text formatted Javascript
+import TechCombo from '../TechCombo/TechCombo';
 
 export default function Projects() {
   const t = useTranslations('Projects');
@@ -67,15 +64,9 @@ export default function Projects() {
             <div className="flex flex-col gap-y-8">
               <h4 className="text-xl">{t('techs')}</h4>
               <div className="grid w-full grid-cols-4 place-items-center gap-x-4 gap-y-4">
-                {openProject.techs.map((tech: Tech) => {
-                  const IconComponent: IconType | undefined = iconMap[tech];
-                  return IconComponent ? (
-                    <div className="flex flex-col flex-wrap items-center justify-center gap-y-1">
-                      <IconComponent key={tech} className="text-xl" />
-                      <span>{tech}</span>
-                    </div>
-                  ) : null;
-                })}
+                {openProject.techs.map((tech: Tech) => (
+                  <TechCombo tech={tech} />
+                ))}
               </div>
               {openProject.mission && (
                 <div className="flex flex-col gap-y-4">

@@ -1,6 +1,7 @@
 import About from '@/components/About/About';
 import Header from '@/components/Header/Header';
 import Projects from '@/components/Projects/Projects';
+import Skills from '@/components/Skills/Skills';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 export default function Home({ params: { locale } }: Readonly<{ params: { locale: string } }>) {
@@ -11,6 +12,7 @@ export default function Home({ params: { locale } }: Readonly<{ params: { locale
       <Header />
       <About />
       <Projects />
+      <Skills />
     </div>
   );
 }

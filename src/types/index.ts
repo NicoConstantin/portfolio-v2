@@ -17,6 +17,10 @@ export type Tech =
   | 'CSS'
   | 'HTML';
 
+export type TechComboProps = {
+  tech: Tech;
+};
+
 export type IconMap = {
   [key in Tech]: IconType;
 };
