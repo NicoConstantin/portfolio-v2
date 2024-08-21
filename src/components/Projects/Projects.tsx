@@ -31,7 +31,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col gap-y-8">
-      <h1 className="text-2xl font-black">{t('title')}</h1>
+      <h1 className="text-4xl">{t('title')}</h1>
 
       <ul className="flex w-full flex-wrap gap-2">
         {projectsSliced.map((ps: Project[]) => (
