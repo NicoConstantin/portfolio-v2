@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import { locales } from '@/locales';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import Footer from '@/components/Footer/Footer';
 
 const montserrat = Montserrat({
   weight: ['400', '700'], // Specify the weights you need
@@ -44,9 +45,10 @@ export default async function RootLayout({
         {/* <div className="absolute top-0 -z-20 h-screen w-screen"></div> */}
         <Providers>
           <Navbar />
-          <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 md:px-8`}>
+          <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 pb-16 md:px-8`}>
             {children}
           </main>
+          <Footer />
         </Providers>
       </body>
     </html>
