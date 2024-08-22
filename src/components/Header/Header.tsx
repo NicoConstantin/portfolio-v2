@@ -1,17 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { GoArrowDown } from 'react-icons/go';
-import { TbFileCv } from 'react-icons/tb';
+import Social from '../Social/Social';
+import { Link } from '@/navigation';
 
 export default function Header(): JSX.Element {
   const t = useTranslations('Header');
   const baseClassButton: string = 'w-28 px-4 py-1.5 rounded-lg transition duration-300 ease-in-out';
-  const iconClass: string =
-    'text-2xl hover:text-[#C3C3C3] cursor-pointer transition duration-300 ease-in-out';
+
   return (
-    <div className="relative flex h-full min-h-svh w-full flex-col pt-12">
+    <div id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-16">
       <Image
         src="/neon.svg"
         width={600}
@@ -24,8 +23,8 @@ export default function Header(): JSX.Element {
         <div className="flex w-full flex-col gap-y-4">
           <h1 className="flex flex-col text-[2.75rem]">
             <span className="text-2xl">{t('hello')}</span>
-            <span className="font-black">NICOLAS</span>
-            <span className="font-black">CONSTANTIN</span>
+            <span className="whitespace-nowrap font-black">NICOLAS</span>
+            <span className="whitespace-nowrap font-black">CONSTANTIN</span>
             <span className="mt-6 text-xl">{t('description')}</span>
           </h1>
 
@@ -42,14 +41,12 @@ export default function Header(): JSX.Element {
             </button>
           </div>
 
-          <div className="mt-4 flex items-center gap-x-4">
-            <FaGithubSquare className={iconClass} />
-            <FaLinkedin className={iconClass} />
-            <TbFileCv className={iconClass} />
-          </div>
+          <Social containerClass="mt-4 flex items-center gap-x-4" />
         </div>
 
-        <GoArrowDown className="mb-4 animate-bounce self-center text-3xl" />
+        <Link href="#about" offset={100} className="mb-4 self-center">
+          <GoArrowDown className="animate-bounce cursor-pointer text-3xl" />
+        </Link>
       </div>
     </div>
   );

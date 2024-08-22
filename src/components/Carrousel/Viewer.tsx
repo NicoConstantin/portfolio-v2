@@ -42,7 +42,7 @@ export default function Viewer({ slides, options }: ViewerProps) {
         </div>
       </div>
 
-      <div className="flex w-full items-center justify-center gap-x-4">
+      <div className="flex w-full items-center justify-center gap-x-12">
         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>

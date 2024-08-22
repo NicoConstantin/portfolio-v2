@@ -30,7 +30,8 @@ export default function Projects() {
   const projectsSliced = chunkArray(projects, 2);
 
   return (
-    <div className="flex flex-col gap-y-8">
+    <div className="relative flex flex-col gap-y-8">
+      <div id="projects" className="absolute -top-[100px]" />
       <h1 className="text-4xl">{t('title')}</h1>
 
       <ul className="flex w-full flex-wrap gap-2">

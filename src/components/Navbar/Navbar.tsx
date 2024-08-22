@@ -11,22 +11,22 @@ import { Link } from '@/navigation';
 export default function Navbar(): JSX.Element {
   const t = useTranslations('Navbar');
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const navOptions: string[] = ['home', 'about', 'projects', 'skills', 'contact'];
+  const navOptions: string[] = ['home', 'about', 'projects', 'skills', 'testimonials'];
   const langOptions: string[] = ['en', 'fr', 'es'];
 
   const MenuIcon = ({ isOpen, onClick }: { isOpen: boolean; onClick: Function }): JSX.Element => {
     const Icon = isOpen ? CgClose : CgMenu;
     return (
-      <button onClick={() => onClick()} className={'z-40'}>
+      <button onClick={() => onClick()} className={'z-40 text-lg'}>
         <Icon />
       </button>
     );
   };
 
   return (
-    <nav className="fixed top-0 z-50 flex h-12 w-full items-center justify-center bg-neutral-950/80 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
+    <nav className="fixed top-0 z-50 flex h-14 w-full items-center justify-center bg-neutral-950/80 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
       <div className="flex h-full w-full max-w-screen-xl items-center justify-between px-6 md:px-8">
-        <PiCodeDuotone />
+        <PiCodeDuotone className="text-lg" />
 
         {/*MENU HAMBURGUER */}
         <div className="flex items-center md:hidden">

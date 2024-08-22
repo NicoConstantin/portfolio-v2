@@ -23,6 +23,9 @@ const config: Config = {
       animation: {
         'spin-slow': 'spin 50s linear infinite',
       },
+      screens: {
+        xs: '375px',
+      },
     },
   },
   plugins: [],

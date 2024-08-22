@@ -14,7 +14,8 @@ export default function Recommendations() {
     { key: 'fer', name: 'Fernando Villabrille', img: '/fer.jpeg' },
   ];
   return (
-    <div className="flex flex-col gap-y-6">
+    <div className="relative flex flex-col gap-y-6">
+      <div id="testimonials" className="absolute -top-[100px]" />
       <h1 className="text-4xl">{t('title')}</h1>
       <span className="text-lg">{t('description')}</span>
       {/*HERE GOES A CARROUSEL OF RECOMMENDCARDS */}
