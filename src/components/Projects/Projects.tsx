@@ -7,6 +7,7 @@ import { Modal, ModalOverlay, ModalContent, useDisclosure } from '@chakra-ui/rea
 import { Project, Tech } from '@/types';
 import { projects } from '@/data/projects';
 import TechCombo from '../TechCombo/TechCombo';
+import { titleClass } from '@/data/defaultClasses';
 
 export default function Projects() {
   const t = useTranslations('Projects');
@@ -32,7 +33,7 @@ export default function Projects() {
   return (
     <div className="relative flex flex-col gap-y-8">
       <div id="projects" className="absolute -top-[100px]" />
-      <h1 className="text-4xl">{t('title')}</h1>
+      <h1 className={titleClass}>{t('title')}</h1>
 
       <ul className="flex w-full flex-wrap gap-2">
         {projectsSliced.map((ps: Project[]) => (

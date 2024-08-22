@@ -40,9 +40,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${montserrat.variable} ${onest.variable} font-onest flex flex-col items-center justify-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,220,220,0.2),rgba(255,255,255,0))]`}
+        className={`${montserrat.variable} ${onest.variable} font-onest relative flex h-full w-full flex-col items-center justify-center scroll-smooth bg-black`}
       >
-        {/* <div className="absolute top-0 -z-20 h-screen w-screen"></div> */}
+        <div className="fixed left-0 top-0 -z-10 h-full w-full">
+          <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-[linear-gradient(to_right,_#4f4f4f2e_1px,_transparent_1px),_linear-gradient(to_bottom,_#8080800a_1px,_transparent_1px)] bg-[length:14px_24px]"></div>
+
+          <div className="absolute left-0 right-0 top-[-10%] -z-10 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_50%,_#fbfbfb36,_#030303)]"></div>
+        </div>
         <Providers>
           <Navbar />
           <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 pb-16 md:px-8`}>

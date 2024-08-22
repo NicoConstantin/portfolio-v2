@@ -7,7 +7,8 @@ import { Link } from '@/navigation';
 
 export default function Header(): JSX.Element {
   const t = useTranslations('Header');
-  const baseClassButton: string = 'w-28 px-4 py-1.5 rounded-lg transition duration-300 ease-in-out';
+  const baseClassButton: string =
+    'w-28 px-4 py-1.5 rounded-lg transition duration-300 ease-in-out shadow shadow-lg ';
 
   return (
     <div id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-16">
@@ -44,8 +45,8 @@ export default function Header(): JSX.Element {
           <Social containerClass="mt-4 flex items-center gap-x-4" />
         </div>
 
-        <Link href="#about" offset={100} className="mb-4 self-center">
-          <GoArrowDown className="animate-bounce cursor-pointer text-3xl" />
+        <Link href="#about" offset={100} className="group mb-4 self-center">
+          <GoArrowDown className="animate-bounce cursor-pointer text-3xl transition-all duration-500 ease-in-out group-hover:text-purple-700" />
         </Link>
       </div>
     </div>

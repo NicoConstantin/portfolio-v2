@@ -14,7 +14,9 @@ const config: Config = {
       },
       colors: {
         'light-black': '#121212',
-        black: '#0A0A0A',
+        black: '#030303',
+        'dark-purple': '#341958',
+        'light-purple': '#8f60d1',
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'], // Use the variable name for the font

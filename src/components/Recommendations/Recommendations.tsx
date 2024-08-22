@@ -3,6 +3,7 @@ import React from 'react';
 import { Referrer } from '@/types';
 import { useTranslations } from 'next-intl';
 import Viewer from '../Carrousel/Viewer';
+import { titleClass } from '@/data/defaultClasses';
 
 export default function Recommendations() {
   const t = useTranslations('Recommendations');
@@ -16,7 +17,7 @@ export default function Recommendations() {
   return (
     <div className="relative flex flex-col gap-y-6">
       <div id="testimonials" className="absolute -top-[100px]" />
-      <h1 className="text-4xl">{t('title')}</h1>
+      <h1 className={titleClass}>{t('title')}</h1>
       <span className="text-lg">{t('description')}</span>
       {/*HERE GOES A CARROUSEL OF RECOMMENDCARDS */}
       <Viewer slides={referrers} />
