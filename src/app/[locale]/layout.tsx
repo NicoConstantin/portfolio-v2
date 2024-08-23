@@ -40,18 +40,16 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ scrollBehavior: 'smooth' }}>
       <body
-        className={`${montserrat.variable} ${onest.variable} font-onest relative flex h-full w-full flex-col items-center justify-center scroll-smooth bg-black`}
+        className={`${montserrat.variable} ${onest.variable} relative flex h-full w-full flex-col items-center justify-center scroll-smooth bg-black font-onest`}
       >
-        <div className="fixed left-0 top-0 -z-10 h-full w-full">
-          <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-[linear-gradient(to_right,_#4f4f4f2e_1px,_transparent_1px),_linear-gradient(to_bottom,_#8080800a_1px,_transparent_1px)] bg-[length:14px_24px]"></div>
-
-          <div className="absolute left-0 right-0 top-[-10%] -z-10 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_50%,_#fbfbfb36,_#030303)]"></div>
-        </div>
         <Providers>
           <Navbar />
-          <main className={`h-full w-full max-w-screen-xl overflow-hidden px-6 pb-16 md:px-8`}>
-            {children}
-          </main>
+          <div className="fixed left-0 top-0 -z-10 h-full w-full">
+            <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-[linear-gradient(to_right,_#4f4f4f2e_1px,_transparent_1px),_linear-gradient(to_bottom,_#8080800a_1px,_transparent_1px)] bg-[length:14px_24px]"></div>
+
+            <div className="absolute left-0 right-0 top-[-10%] -z-10 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_50%,_#fbfbfb36,_#030303)]"></div>
+          </div>
+          <main className={`flex h-full w-full justify-center pb-16`}>{children}</main>
           <Footer />
         </Providers>
       </body>

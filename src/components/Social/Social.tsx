@@ -2,9 +2,9 @@ import React from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { TbFileCv } from 'react-icons/tb';
 
-export default function Social({ containerClass }: { containerClass: string }) {
+export default function Social({ containerClass }: Readonly<{ containerClass: string }>) {
   const iconClass: string =
-    'text-2xl hover:text-[#C3C3C3] cursor-pointer transition duration-300 ease-in-out';
+    'text-[1.75rem] text-white hover:text-light-purple cursor-pointer transition duration-300 ease-in-out lg:text-3xl';
   return (
     <div className={containerClass}>
       <a href="https://github.com/NicoConstantin" target={'_blank'}>

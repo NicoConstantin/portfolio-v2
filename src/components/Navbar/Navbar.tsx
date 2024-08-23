@@ -46,8 +46,8 @@ export default function Navbar(): JSX.Element {
   };
 
   return (
-    <nav className="fixed top-0 z-[80] flex h-14 w-full items-center justify-center bg-neutral-950/90 px-6 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150 md:px-8">
-      <div className="z-50 flex h-full w-full max-w-screen-xl items-center justify-between">
+    <nav className="fixed top-0 z-[80] flex h-14 w-full items-center justify-center bg-neutral-950/90 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
+      <div className="z-50 flex h-full w-full max-w-screen-lg items-center justify-between px-6 md:px-8">
         <Link href={`#home`} className="z-40">
           <PiCodeDuotone className="text-xl" />
         </Link>
@@ -99,7 +99,7 @@ export default function Navbar(): JSX.Element {
               <Link
                 href={`#${option}`}
                 key={option}
-                className="hover:text-light-purple text-lg text-white transition-all duration-300 ease-in-out"
+                className="text-lg text-white transition-all duration-300 ease-in-out hover:text-light-purple"
               >
                 {t(option)}
               </Link>
@@ -113,7 +113,7 @@ export default function Navbar(): JSX.Element {
                 className="bg-transparent hover:bg-transparent"
                 icon={
                   <MdLanguage
-                    className="hover:!text-light-purple cursor-pointer text-lg text-white transition-all duration-300 ease-in-out"
+                    className="cursor-pointer text-lg text-white transition-all duration-300 ease-in-out hover:!text-light-purple"
                     onClick={() => setIsLangMenuOpen((prev) => !prev)}
                   />
                 }
@@ -129,7 +129,7 @@ export default function Navbar(): JSX.Element {
                     href="/"
                     locale={lng}
                     key={lng}
-                    className="text-md hover:text-light-purple transition-all duration-300 ease-in-out"
+                    className="text-md transition-all duration-300 ease-in-out hover:text-light-purple"
                     onClick={() => setIsLangMenuOpen(false)}
                   >
                     {t(`Languages.${lng}`)}
