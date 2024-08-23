@@ -28,6 +28,18 @@ export default function Projects() {
     return result;
   };
 
+  const getSizeClass = (indexRow: number, indexColumn: number): string => {
+    const isOddRow = indexRow % 2 === 0;
+    const isFirstColumn = indexColumn === 0;
+
+    // Asigna clases dependiendo de la fila (impar/par) y la columna (primera/segunda)
+    if (isOddRow) {
+      return isFirstColumn ? 'basis-7/12 hover:basis-9/12' : 'basis-5/12 hover:basis-7/12 ';
+    } else {
+      return isFirstColumn ? 'basis-5/12 hover:basis-7/12 ' : 'basis-7/12 hover:basis-9/12';
+    }
+  };
+
   const projectsSliced = chunkArray(projects, 2);
 
   return (
@@ -36,23 +48,27 @@ export default function Projects() {
       <h1 className={titleClass}>{t('title')}</h1>
 
       <ul className="flex w-full flex-wrap gap-2">
-        {projectsSliced.map((ps: Project[]) => (
+        {projectsSliced.map((ps: Project[], indexRow: number) => (
           <div className="flex w-full gap-2 overflow-hidden" key={ps[0].key}>
-            {ps.map((p: Project) => (
-              <div
-                key={p.key}
-                className="h-40 flex-1 basis-5/12 cursor-pointer grayscale-[90%] transition-all duration-500 ease-in-out hover:basis-7/12 hover:grayscale-0"
-              >
-                <Image
-                  src={p.img}
-                  width={600}
-                  height={600}
-                  alt={p.alt}
-                  className="h-full w-full object-cover object-center"
-                  onClick={() => onClickProject(p)}
-                />
-              </div>
-            ))}
+            {ps.map((p: Project, indexColumn: number) => {
+              const sizeClass = getSizeClass(indexRow, indexColumn);
+
+              return (
+                <div
+                  key={p.key}
+                  className={`h-40 flex-1 ${sizeClass} cursor-pointer bg-white/50 grayscale-[90%] transition-all duration-500 ease-in-out hover:bg-white/90 hover:grayscale-0`}
+                >
+                  <Image
+                    src={p.img}
+                    width={600}
+                    height={600}
+                    alt={p.alt}
+                    className="h-full w-full object-contain object-center"
+                    onClick={() => onClickProject(p)}
+                  />
+                </div>
+              );
+            })}
           </div>
         ))}
       </ul>

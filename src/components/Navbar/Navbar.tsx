@@ -24,8 +24,8 @@ export default function Navbar(): JSX.Element {
   };
 
   return (
-    <nav className="fixed top-0 z-50 flex h-14 w-full items-center justify-center bg-neutral-950/80 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
-      <div className="flex h-full w-full max-w-screen-xl items-center justify-between px-6 md:px-8">
+    <nav className="fixed top-0 z-50 flex h-14 w-full items-center justify-center bg-neutral-950/70 px-6 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150 md:px-8">
+      <div className="flex h-full w-full max-w-screen-xl items-center justify-between">
         <PiCodeDuotone className="text-lg" />
 
         {/*MENU HAMBURGUER */}
@@ -66,7 +66,8 @@ export default function Navbar(): JSX.Element {
             <MenuButton
               as={IconButton}
               aria-label="Languages"
-              icon={<MdLanguage />}
+              className="flex h-fit w-fit justify-end"
+              icon={<MdLanguage className="text-lg" />}
               variant="none"
             />
             <MenuList bg="black" color="white" w="100%">

@@ -20,7 +20,7 @@ export default function RecommendCard({ refferer }: { refferer: Referrer }) {
             alt={refferer.name}
             className="size-6 rounded-full"
           />
-          <span className="whitespace-nowrap text-sm">{refferer.name}</span>
+          <span className="text-sm">{refferer.name}</span>
         </div>
         <div className="h-6">
           <Divider orientation="vertical" />

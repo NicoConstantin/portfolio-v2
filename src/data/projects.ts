@@ -3,7 +3,7 @@ import { Project } from '@/types';
 export const projects: Project[] = [
   {
     key: 'henry',
-    img: '/henry.png',
+    img: '/henry.svg',
     alt: 'henry logo',
     type: 'desktop',
     mission: true,
@@ -11,7 +11,7 @@ export const projects: Project[] = [
   },
   {
     key: 'crLotes',
-    img: '/lotes.png',
+    img: '/crlotes.svg',
     alt: 'crlotes logo',
     type: 'desktop',
     mission: true,
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     key: 'musureGame',
-    img: '/musure1.jpg',
+    img: '/musure1.svg',
     alt: 'musure game screen',
     type: 'desktop',
     mission: true,
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   },
   {
     key: 'musureCreator',
-    img: '/musure2.png',
+    img: '/musure2.svg',
     alt: 'musure creator screen',
     type: 'desktop',
     mission: true,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
   },
   {
     key: 'provincia',
-    img: '/provincia.png',
+    img: '/provincia.svg',
     alt: 'provinciaART logo',
     type: 'desktop',
     mission: true,
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   },
   {
     key: 'sosNails',
-    img: '/nails.jpg',
+    img: '/bellasos.svg',
     alt: 'nails photo',
     type: 'desktop',
     mission: true,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   },
   {
     key: 'restaurant',
-    img: '/restaurant.jpg',
+    img: '/kitchenflow.svg',
     alt: 'restaurant photo',
     type: 'desktop',
     mission: true,

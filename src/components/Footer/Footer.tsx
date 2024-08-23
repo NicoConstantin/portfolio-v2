@@ -12,8 +12,8 @@ export default function Footer() {
     'text-xl hover:text-[#C3C3C3] cursor-pointer transition duration-300 ease-in-out ';
 
   return (
-    <footer className="flex w-full flex-col bg-neutral-800/80 px-6 py-6 text-gray-400 md:px-8 md:py-8">
-      <div className="mb-2 flex items-center justify-between">
+    <footer className="flex w-full flex-col items-center justify-center bg-neutral-950/70 px-6 py-6 text-gray-400 md:px-8 md:py-8">
+      <div className="mb-2 flex w-full max-w-screen-xl items-center justify-between">
         <div className="flex items-center gap-x-8">
           <a href="/" className="flex items-center justify-center text-4xl text-white sm:mb-0">
             <PiCodeDuotone />
