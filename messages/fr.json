@@ -4,7 +4,7 @@
     "about": "À propos",
     "projects": "Projets",
     "skills": "Compétences",
-    "contact": "Contact",
+    "recommendations": "Recommandations",
     "Languages": {
       "en": "Anglais",
       "es": "Espagnol",
@@ -13,13 +13,82 @@
   },
   "Header": {
     "hello": "Bonjour, je suis",
-    "description": "Développeur logiciel | Basé en Suisse",
+    "description": "Développeur de logiciels | Basé en Suisse",
     "talkButton": "Discutons",
     "workButton": "Mon travail",
-    "scroll": "Faites défiler vers le bas"
+    "scroll": "Faire défiler vers le bas"
   },
   "About": {
     "title": "À propos de moi",
-    "description": "Je suis développeur de logiciels avec plus de deux ans d'expérience, spécialisé en développement front-end avec Next.js, React et Redux. Diplômé en tant que développeur Full Stack, j'aime créer des solutions modernes et efficaces. Je viens de m'installer en Suisse, où je continue à développer mes compétences tout en m'adaptant à un nouvel environnement."
+    "description": "Je suis un développeur de logiciels avec plus de deux ans d'expérience, spécialisé dans le développement front-end. Diplômé en tant que développeur Full Stack, j'apprécie créer des solutions modernes et efficaces. Je viens de m'installer en Suisse, où je continue à développer mes compétences tout en m'adaptant à un nouvel environnement."
+  },
+  "Projects": {
+    "title": "Projets",
+    "techs": "Technologies utilisées",
+    "mission": "Mission",
+    "henry": {
+      "title": "Henry E-commerce",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "crLotes": {
+      "title": "CR Lotes",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "musureGame": {
+      "title": "MUSURE Game",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "musureCreator": {
+      "title": "MUSURE Creator",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "provincia": {
+      "title": "Provincia ART",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "sosNails": {
+      "title": "S.O.S nails",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    },
+    "restaurant": {
+      "title": "Restaurant",
+      "description": "Voici une courte description du projet",
+      "mission": "Voici la mission du projet"
+    }
+  },
+  "Recommendations": {
+    "title": "Témoignages",
+    "description": "Explorez toute la collection de composants web open-source et d'éléments construits avec les classes utilitaires de Tailwind",
+    "received": {
+      "tano": {
+        "headline": "Fondateur & CEO de MUSURE world",
+        "text": "Nico est l'un des meilleurs collaborateurs avec qui j'ai eu le plaisir de travailler !\n Il comprend toujours les problèmes et est toujours prêt à les résoudre avec une perspective Lean.\n J'ai hâte de continuer à travailler avec lui !"
+      },
+      "fer": {
+        "headline": "Designer Graphique, Multimédia et Produit",
+        "text": "Il a été un excellent partenaire, avec des connaissances solides et une proactivité dans la recherche de solutions.\n Sa capacité à travailler en équipe et à communiquer avec d'autres disciplines a renforcé la création des solutions dont nous avions besoin."
+      },
+      "giu": {
+        "headline": "Professionnel en Gestion de Projets & Scrum Master Professionnel",
+        "text": "Excellentes compétences analytiques et assertivité dans l'explication des problèmes techniques.\n Un jeune professionnel agile qui excelle dans chaque Sprint."
+      },
+      "lino": {
+        "headline": "Directeur Créatif, Producteur, Stratège Digital & des Médias Sociaux",
+        "text": "Nico possède de grandes compétences en tant que développeur. Toujours attentif, réactif et proactif dans la résolution de tout problème.\n Notre produit a grandi grâce à ses précieuses contributions et idées.\n Un plaisir de travailler avec toi Nico !"
+      },
+      "agus": {
+        "headline": "Développeur Full Stack",
+        "text": "Une personne très proactive, prête à travailler en équipe et à collaborer.\n Capable de relever tous les défis pour continuer à grandir et à se développer en tant que professionnel."
+      }
+    }
+  },
+  "Footer": {
+    "copyright": "@ 2024 Créé Par Constantin Nicolas"
   }
 }
