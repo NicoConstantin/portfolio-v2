@@ -47,7 +47,6 @@ export default function Header(): JSX.Element {
 
         <Link
           href="#about"
-          offset={100}
           className="group mb-4 flex flex-col items-center justify-center gap-y-2 self-center"
         >
           <span className="text-xs text-gray-400 lg:text-sm">{t('scroll')}</span>
