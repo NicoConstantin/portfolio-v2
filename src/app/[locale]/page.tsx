@@ -9,7 +9,7 @@ export default function Home({ params: { locale } }: Readonly<{ params: { locale
   unstable_setRequestLocale(locale);
 
   return (
-    <div className="flex h-full min-h-screen max-w-screen-lg flex-col gap-y-32 overflow-hidden px-6 text-white md:px-8">
+    <div className="flex h-full min-h-screen max-w-screen-lg flex-col gap-y-40 overflow-hidden px-6 text-white md:px-8">
       <Header />
       <About />
       <Projects />
