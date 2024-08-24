@@ -8,6 +8,8 @@ export const projects: Project[] = [
     type: 'desktop',
     mission: true,
     techs: ['Javascript', 'HTML', 'CSS', 'React', 'Redux', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
+    demo: '',
+    code: '',
   },
   {
     key: 'crLotes',
@@ -16,6 +18,8 @@ export const projects: Project[] = [
     type: 'desktop',
     mission: true,
     techs: ['Javascript', 'HTML', 'CSS', 'React', 'TailwindCSS'],
+    demo: '',
+    code: '',
   },
   {
     key: 'musureGame',
@@ -24,6 +28,8 @@ export const projects: Project[] = [
     type: 'desktop',
     mission: true,
     techs: ['Javascript', 'React', 'Redux', 'TailwindCSS', 'Firebase'],
+    demo: '',
+    code: '',
   },
   {
     key: 'musureCreator',
@@ -42,6 +48,8 @@ export const projects: Project[] = [
       'ExpressJS',
       'NodeJS',
     ],
+    demo: '',
+    code: '',
   },
   {
     key: 'provincia',
@@ -59,6 +67,8 @@ export const projects: Project[] = [
       'ExpressJS',
       'NodeJS',
     ],
+    demo: '',
+    code: '',
   },
   {
     key: 'sosNails',
@@ -67,6 +77,8 @@ export const projects: Project[] = [
     type: 'desktop',
     mission: true,
     techs: ['Typescript', 'React', 'MongoDB'],
+    demo: '',
+    code: '',
   },
   {
     key: 'restaurant',
@@ -84,5 +96,7 @@ export const projects: Project[] = [
       'ExpressJS',
       'NodeJS',
     ],
+    demo: '',
+    code: '',
   },
 ];

@@ -3,15 +3,15 @@ import { NextButton, PrevButton, usePrevNextButtons } from './Buttons';
 import useEmblaCarousel from 'embla-carousel-react';
 import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Referrer } from '@/types';
-import RecommendCard from '../RecommendCard/RecommendCard';
+import { Project, Referrer } from '@/types';
 
 type ViewerProps = {
-  slides: Referrer[];
+  items: Referrer[] | Project[];
   options?: EmblaOptionsType;
+  renderItem: (item: Referrer | Project) => React.ReactNode;
 };
 
-export default function Viewer({ slides, options }: ViewerProps) {
+export default function Viewer({ items, options, renderItem }: ViewerProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
@@ -31,12 +31,12 @@ export default function Viewer({ slides, options }: ViewerProps) {
     <div className="flex flex-col items-center justify-center gap-y-4 overflow-hidden">
       <div className="w-full overflow-hidden" ref={emblaRef}>
         <div className="flex min-h-fit w-full">
-          {slides.map((s) => (
+          {items.map((item) => (
             <div
-              className="flex h-64 w-full min-w-0 flex-none items-center justify-center px-1.5"
-              key={s.key}
+              className="flex w-full min-w-0 flex-none items-center justify-center px-1.5"
+              key={item.key}
             >
-              <RecommendCard refferer={s} />
+              {renderItem(item)}
             </div>
           ))}
         </div>

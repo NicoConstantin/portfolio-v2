@@ -32,6 +32,8 @@ export interface Project {
   type: 'mobile' | 'desktop';
   techs: Tech[];
   mission: boolean;
+  demo?: string;
+  code?: string;
 }
 
 export interface Referrer {

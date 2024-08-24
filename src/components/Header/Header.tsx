@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { GoArrowDown } from 'react-icons/go';
-import Social from '../Social/Social';
+import { MdOutlineMailOutline } from 'react-icons/md';
 import { Link } from '@/navigation';
 
 export default function Header(): JSX.Element {
   const t = useTranslations('Header');
   const baseClassButton: string =
-    'w-32 px-4 py-1.5 rounded-lg transition duration-300 ease-in-out shadow shadow-lg lg:px-6 lg:py-2.5 lg:w-40';
+    'px-4 py-1.5 rounded-lg transition duration-300 ease-in-out shadow-lg lg:px-6 lg:py-2.5 whitespace-nowrap';
 
   return (
     <div id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-20">
@@ -29,20 +29,23 @@ export default function Header(): JSX.Element {
             <span className="mt-6 text-xl lg:mt-10 lg:text-2xl">{t('description')}</span>
           </h1>
 
-          <div className="mt-10 flex items-center justify-start gap-x-4 text-lg lg:text-xl">
-            <button
-              className={`${baseClassButton} border border-white bg-white text-black hover:border-[#C3C3C3] hover:bg-[#C3C3C3]`}
+          <div className="text-md mt-10 flex items-center justify-start gap-x-4 lg:text-lg">
+            <a
+              href="mailto:nicoconstantin11@gmail.com"
+              target="_blank"
+              className={`${baseClassButton} flex items-center justify-start gap-x-1 border border-light-purple bg-light-purple text-white hover:border-dark-purple hover:bg-dark-purple`}
             >
-              {t('talkButton')}
-            </button>
-            <button
+              <MdOutlineMailOutline size="1.5rem" className="hidden xs:flex" />
+              {t('button1')}
+            </a>
+            <a
+              href="https://www.dropbox.com/scl/fi/tlgstirgtyc0pagwqe3rh/CV-Nicolas-Constantin-Full-Stack-Developer.pdf?rlkey=1i6lrwg67sf8yu5g0yqwmf3ht&st=os14jrpe&dl=0"
               className={`${baseClassButton} border border-white/50 bg-white/5 hover:bg-white/20`}
+              target="_blank"
             >
-              {t('workButton')}
-            </button>
+              {t('button2')}
+            </a>
           </div>
-
-          <Social containerClass="mt-8 flex items-center gap-x-4" />
         </div>
 
         <Link

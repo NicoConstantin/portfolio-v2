@@ -14,8 +14,8 @@
   "Header": {
     "hello": "Hello, I'm",
     "description": "Software Developer | Based on Swiss",
-    "talkButton": "Let's talk",
-    "workButton": "My work",
+    "button1": "Contact Me",
+    "button2": "Download CV",
     "scroll": "Scroll down"
   },
   "About": {
@@ -26,6 +26,8 @@
     "title": "Projects",
     "techs": "Technologies used",
     "mission": "Mission",
+    "github": "View Code",
+    "demo": "Live Demo",
     "henry": {
       "title": "Henry E-commerce",
       "description": "Here goes a short description of the project",
