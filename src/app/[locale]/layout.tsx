@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat, Onest } from 'next/font/google';
+import { Onest } from 'next/font/google';
 import { Providers } from '@/providers/Providers';
 import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
@@ -7,12 +7,6 @@ import { locales } from '@/locales';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Footer from '@/components/Footer/Footer';
 import Head from 'next/head';
-
-const montserrat = Montserrat({
-  weight: ['400', '700'], // Specify the weights you need
-  subsets: ['latin'], // Specify the subsets you need
-  variable: '--font-montserrat',
-});
 
 const onest = Onest({
   weight: ['400', '700'], // Specify the weights you need
@@ -48,7 +42,7 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={`${montserrat.variable} ${onest.variable} relative flex h-full w-full flex-col items-center justify-center scroll-smooth bg-black font-onest`}
+        className={` ${onest.variable} relative flex h-full w-full flex-col items-center justify-center scroll-smooth bg-black font-onest`}
       >
         <Providers>
           <Navbar />

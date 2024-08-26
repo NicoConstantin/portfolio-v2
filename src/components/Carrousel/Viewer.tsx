@@ -50,7 +50,6 @@ export default function Viewer({ items, options, renderItem, slidesOnScreen = 1 
           ))}
         </div>
       </div>
-
       <div className="flex w-full items-center justify-center gap-x-12">
         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />

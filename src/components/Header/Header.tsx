@@ -13,7 +13,7 @@ export default function Header(): JSX.Element {
   return (
     <div id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-20">
       <Image
-        src="/neon.svg"
+        src="/headerNeon.svg"
         width={600}
         height={800}
         className="absolute -z-10 -ml-6 mt-4 rotate-180 xs:mt-0"

@@ -1,10 +1,8 @@
 import { Project } from '@/types';
-import { Box, Button, ButtonGroup, Card, Tag } from '@chakra-ui/react';
+import { Tag } from '@chakra-ui/react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react';
-import { FiExternalLink } from 'react-icons/fi';
-import { LuGithub } from 'react-icons/lu';
 import ProjectButtons from '../ProjectButtons/ProjectButtons';
 
 export default function ProjectViewerCard({ project }: { project: Project }) {

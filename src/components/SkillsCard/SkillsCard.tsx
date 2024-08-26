@@ -1,4 +1,4 @@
-import { Badge, Card, Tag } from '@chakra-ui/react';
+import { Card, Tag } from '@chakra-ui/react';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { IconType } from 'react-icons';

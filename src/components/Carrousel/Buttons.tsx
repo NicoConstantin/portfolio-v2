@@ -51,8 +51,13 @@ export const usePrevNextButtons = (
 type PropType = ComponentPropsWithRef<'button'>;
 
 export const PrevButton: React.FC<PropType> = (props) => {
+  console.log('PROPS', props);
   return (
-    <button type="button" {...props}>
+    <button
+      type="button"
+      {...props}
+      className="transition-all duration-300 ease-in-out disabled:text-gray-500"
+    >
       <MdKeyboardArrowLeft className="text-xl" />
     </button>
   );
@@ -60,7 +65,11 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
 export const NextButton: React.FC<PropType> = (props) => {
   return (
-    <button type="button" {...props} className="disabled:text-red-400">
+    <button
+      type="button"
+      {...props}
+      className="transition-all duration-300 ease-in-out disabled:text-gray-500"
+    >
       <MdKeyboardArrowRight className="text-xl" />
     </button>
   );

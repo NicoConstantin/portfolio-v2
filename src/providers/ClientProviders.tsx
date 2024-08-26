@@ -7,9 +7,7 @@ import { IconContext } from 'react-icons';
 export function ClientProviders({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <CacheProvider>
-      <IconContext.Provider
-        value={{ color: 'white', size: '1.5em', className: 'global-class-name' }}
-      >
+      <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name' }}>
         <ChakraProvider>{children}</ChakraProvider>
       </IconContext.Provider>
     </CacheProvider>

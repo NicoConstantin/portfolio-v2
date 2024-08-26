@@ -2,7 +2,7 @@ import { Referrer } from '@/types';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react';
-import { Card, Center, Divider } from '@chakra-ui/react';
+import { Card } from '@chakra-ui/react';
 
 export default function RecommendCard({ refferer }: { refferer: Referrer }) {
   const t = useTranslations('Recommendations');
