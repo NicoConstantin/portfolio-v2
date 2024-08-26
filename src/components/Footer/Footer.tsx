@@ -37,9 +37,18 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex items-center gap-x-4">
-          <FaGithubSquare className={iconClass} />
-          <FaLinkedin className={iconClass} />
-          <TbFileCv className={iconClass} />
+          <a href="https://github.com/NicoConstantin" target={'_blank'}>
+            <FaGithubSquare className={iconClass} />
+          </a>
+          <a href="https://www.linkedin.com/in/nico-constantin/" target={'_blank'}>
+            <FaLinkedin className={iconClass} />
+          </a>
+          <a
+            href="https://www.dropbox.com/scl/fi/tlgstirgtyc0pagwqe3rh/CV-Nicolas-Constantin-Full-Stack-Developer.pdf?rlkey=1i6lrwg67sf8yu5g0yqwmf3ht&st=os14jrpe&dl=0"
+            target={'_blank'}
+          >
+            <TbFileCv className={iconClass} />
+          </a>
         </div>
       </div>
       <hr className="my-4 border-gray-700 sm:mx-auto lg:my-8" />
