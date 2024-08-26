@@ -16,7 +16,9 @@ export default function ProjectButtons({ project }: { project: Project }) {
           leftIcon={<LuGithub size={'1rem'} />}
           className="border border-white/30 bg-white/20 text-xs font-normal text-white transition duration-300 ease-in-out hover:bg-white/40 xs:text-sm"
         >
-          <a href={project.code}>{t('github')}</a>
+          <a href={project.code} target="_blank">
+            {t('github')}
+          </a>
         </Button>
       </Tooltip>
       <Tooltip label={project.blockedByContract ? t('blockContract') : t('onProgress')}>
@@ -26,7 +28,9 @@ export default function ProjectButtons({ project }: { project: Project }) {
           leftIcon={<FiExternalLink size={'1rem'} />}
           className="bg-primary hover:bg-secondary text-xs font-normal text-white transition duration-300 ease-in-out xs:text-sm"
         >
-          <a href={project.demo}>{t('demo')}</a>
+          <a href={project.demo} target="_blank">
+            {t('demo')}
+          </a>
         </Button>
       </Tooltip>
     </ButtonGroup>
