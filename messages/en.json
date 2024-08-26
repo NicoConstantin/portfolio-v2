@@ -24,35 +24,35 @@
   },
   "Projects": {
     "title": "Projects",
-    "description": "Take a look at the projects where I've applied my skills to solve real-world problems",
+    "description": "Take a look at the projects where I've applied my skills to solve real-world problems.",
     "blockContract": "Blocked by contract",
     "onProgress": "On Progress",
     "github": "View Code",
     "demo": "Live Demo",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Created an e-commerce platform with an admin panel for managing and selling Henry's merchandise"
+      "description": "Created an e-commerce platform with an admin panel for managing and selling Henry's merchandise."
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Built a web-based game where users can customize avatars, play mini-games, and earn rewards"
+      "description": "Built a web-based game where users can customize avatars, play mini-games, and earn rewards."
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Developed a platform enabling content creators and gamers to create, buy, and sell digital assets in a marketplace"
+      "description": "Developed a platform enabling content creators and gamers to create, buy, and sell digital assets in a marketplace."
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Updated an internal website for insurance producers, focusing on modernizing technology and enhancing security"
+      "description": "Updated an internal website for insurance producers, focusing on modernizing technology and enhancing security."
     },
     "sosNails": {
       "title": "S.O.S Beauty",
-      "description": "Developed a website for showcasing nail art, managing promotions, and handling content and appointments via an admin panel"
+      "description": "Developed a website for showcasing nail art, managing promotions, and handling content and appointments via an admin panel."
     }
   },
   "Skills": {
     "title": "Skills",
-    "description": "A blend of technical know-how and essential soft skills, from coding to collaboration",
+    "description": "A blend of technical know-how and essential soft skills, from coding to team collaboration.",
     "soft": "Soft Skills",
     "hard": "Tech Skills",
     "softSkills": {
@@ -66,7 +66,7 @@
   },
   "Recommendations": {
     "title": "Recommendations",
-    "description": "Insights from those who’ve worked with me, reflecting my skills, work ethic, and teamwork",
+    "description": "Insights from those who’ve worked with me, reflecting my skills, work ethic, and teamwork.",
     "received": {
       "tano": {
         "headline": "Founder & CEO of MUSURE world",

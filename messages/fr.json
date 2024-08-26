@@ -13,7 +13,7 @@
   },
   "Header": {
     "hello": "Bonjour, je suis",
-    "description": "Développeur de logiciels | Basé en Suisse",
+    "description": "Développeur de logiciels | Résidant en Suisse",
     "button1": "Contactez-moi",
     "button2": "Télécharger CV",
     "scroll": "Faites défiler vers le bas"
@@ -24,35 +24,35 @@
   },
   "Projects": {
     "title": "Projets",
-    "description": "Découvrez les projets où j'ai appliqué mes compétences pour résoudre des problèmes réels",
+    "description": "Découvrez les projets où j'ai appliqué mes compétences pour résoudre des problèmes réels.",
     "blockContract": "Bloqué par contrat",
     "onProgress": "En cours",
     "github": "Voir le code",
     "demo": "Démo en direct",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Création d'une plateforme de commerce électronique avec un panneau d'administration pour gérer et vendre le merchandising de Henry"
+      "description": "Création d'une plateforme de commerce électronique avec un panneau d'administration pour gérer et vendre le merchandising de Henry."
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Développement d'un jeu web où les utilisateurs peuvent personnaliser des avatars, jouer à des mini-jeux et gagner des récompenses"
+      "description": "Développement d'un jeu web où les utilisateurs peuvent personnaliser des avatars, jouer à des mini-jeux et gagner des récompenses."
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Développement d'une plateforme permettant aux créateurs de contenu et aux joueurs de créer, acheter et vendre des actifs numériques sur un marché"
+      "description": "Développement d'une plateforme permettant aux créateurs de contenu et aux joueurs de créer, acheter et vendre des actifs numériques sur un marché."
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Mise à jour d'un site web interne pour les producteurs d'assurance, axée sur la modernisation de la technologie et l'amélioration de la sécurité"
+      "description": "Mise à jour d'un site web interne pour les producteurs d'assurance, axée sur la modernisation de la technologie et l'amélioration de la sécurité."
     },
     "sosNails": {
       "title": "S.O.S Beauté",
-      "description": "Développement d'un site web pour présenter des travaux d'ongles, gérer les promotions et traiter le contenu et les rendez-vous via un panneau d'administration"
+      "description": "Développement d'un site web pour présenter des travaux d'ongles, gérer les promotions et traiter le contenu et les rendez-vous via un panneau d'administration."
     }
   },
   "Skills": {
     "title": "Compétences",
-    "description": "Un mélange de savoir-faire technique et de compétences interpersonnelles essentielles, de la programmation à la collaboration",
+    "description": "Un mélange de savoir-faire technique et de compétences interpersonnelles essentielles, de la programmation à la collaboration en équipe.",
     "soft": "Compétences Interpersonnelles",
     "hard": "Compétences Techniques",
     "softSkills": {
@@ -66,7 +66,7 @@
   },
   "Recommendations": {
     "title": "Recommandations",
-    "description": "Retours de ceux qui ont travaillé avec moi, reflétant mes compétences, mon éthique de travail et mon esprit d'équipe",
+    "description": "Retours de ceux qui ont travaillé avec moi, reflétant mes compétences, mon éthique de travail et mon esprit d'équipe.",
     "received": {
       "tano": {
         "headline": "Fondateur et CEO de MUSURE world",
