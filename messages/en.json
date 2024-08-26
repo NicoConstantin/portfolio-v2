@@ -31,30 +31,38 @@
     "demo": "Live Demo",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Here goes a short description of the project"
+      "description": "Created an e-commerce platform with an admin panel for managing and selling Henry's merchandise"
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Here goes a short description of the project"
+      "description": "Built a web-based game where users can customize avatars, play mini-games, and earn rewards"
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Here goes a short description of the project"
+      "description": "Developed a platform enabling content creators and gamers to create, buy, and sell digital assets in a marketplace"
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Here goes a short description of the project"
+      "description": "Updated an internal website for insurance producers, focusing on modernizing technology and enhancing security"
     },
     "sosNails": {
-      "title": "S.O.S nails",
-      "description": "Here goes a short description of the project"
+      "title": "S.O.S Beauty",
+      "description": "Developed a website for showcasing nail art, managing promotions, and handling content and appointments via an admin panel"
     }
   },
   "Skills": {
     "title": "Skills",
     "description": "A blend of technical know-how and essential soft skills, from coding to collaboration",
     "soft": "Soft Skills",
-    "hard": "Tech Skills"
+    "hard": "Tech Skills",
+    "softSkills": {
+      "teamwork": "Teamwork",
+      "problemSolving": "Problem solving",
+      "continuousLearning": "Continuous learning",
+      "adaptation": "Adaptation",
+      "curiosity": "Curiosity",
+      "perseverance": "Perseverance"
+    }
   },
   "Recommendations": {
     "title": "Recommendations",

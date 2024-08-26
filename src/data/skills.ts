@@ -22,10 +22,10 @@ export const techSkills: Tech[] = [
 ];
 
 export const softSkills: string[] = [
-  'Teamwork',
-  'Problem solving',
-  'Continuous learning',
-  'Adaptation',
-  'Curiosity',
-  'Perseverance',
+  'teamwork',
+  'problemSolving',
+  'continuousLearning',
+  'adaptation',
+  'curiosity',
+  'perseverance',
 ];

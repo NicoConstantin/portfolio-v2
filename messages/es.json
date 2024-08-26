@@ -14,9 +14,9 @@
   "Header": {
     "hello": "Hola, soy",
     "description": "Desarrollador de Software | Basado en Suiza",
-    "talkButton": "Hablemos",
-    "workButton": "Mi trabajo",
-    "scroll": "Desplazar hacia abajo"
+    "button1": "Contáctame",
+    "button2": "Descargar CV",
+    "scroll": "Desplázate hacia abajo"
   },
   "About": {
     "title": "Sobre mí",
@@ -24,67 +24,69 @@
   },
   "Projects": {
     "title": "Proyectos",
-    "techs": "Tecnologías utilizadas",
-    "mission": "Misión",
+    "description": "Echa un vistazo a los proyectos en los que he aplicado mis habilidades para resolver problemas del mundo real",
+    "blockContract": "Bloqueado por contrato",
+    "onProgress": "En progreso",
+    "github": "Ver código",
+    "demo": "Demo en vivo",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
-    },
-    "crLotes": {
-      "title": "CR Lotes",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
+      "description": "Creación de una plataforma de comercio electrónico con un panel de administración para gestionar y vender el merchandising de Henry"
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
+      "description": "Desarrollo de un juego web donde los usuarios pueden personalizar avatares, jugar mini-juegos y ganar recompensas"
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
+      "description": "Desarrollo de una plataforma que permite a creadores de contenido y gamers crear, comprar y vender activos digitales en un mercado"
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
+      "description": "Actualización de un sitio web interno para productores de seguros, con foco en modernizar la tecnología y mejorar la seguridad"
     },
     "sosNails": {
-      "title": "S.O.S nails",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
-    },
-    "restaurant": {
-      "title": "Restaurante",
-      "description": "Aquí va una breve descripción del proyecto",
-      "mission": "Aquí va la misión del proyecto"
+      "title": "S.O.S Belleza",
+      "description": "Desarrollo de un sitio web para mostrar trabajos de uñas, gestionar promociones y manejar contenido y citas a través de un panel de administración"
+    }
+  },
+  "Skills": {
+    "title": "Habilidades",
+    "description": "Una combinación de conocimientos técnicos y habilidades blandas esenciales, desde la programación hasta la colaboración",
+    "soft": "Habilidades Blandas",
+    "hard": "Habilidades Técnicas",
+    "softSkills": {
+      "teamwork": "Trabajo en equipo",
+      "problemSolving": "Resolución de problemas",
+      "continuousLearning": "Aprendizaje continuo",
+      "adaptation": "Adaptación",
+      "curiosity": "Curiosidad",
+      "perseverance": "Perseverancia"
     }
   },
   "Recommendations": {
-    "title": "Testimonios",
-    "description": "Explora toda la colección de componentes web de código abierto y elementos construidos con las clases de utilidad de Tailwind",
+    "title": "Recomendaciones",
+    "description": "Opiniones de quienes han trabajado conmigo, reflejando mis habilidades, ética laboral y trabajo en equipo",
     "received": {
       "tano": {
-        "headline": "Fundador & CEO de MUSURE world",
-        "text": "¡Nico es uno de los mejores jugadores con los que he tenido el placer de trabajar!\n Siempre entiende los problemas y siempre está listo para resolverlos con una perspectiva Lean.\n ¡Espero seguir trabajando con él!"
+        "headline": "Fundador y CEO de MUSURE world",
+        "text": "¡Nico es uno de los mejores con los que he tenido el placer de trabajar! \n Siempre entiende los problemas y está listo para resolverlos con una perspectiva Lean. \n ¡Espero seguir trabajando con él!"
       },
       "fer": {
-        "headline": "Diseñador Gráfico, Multimedia y de Producto",
-        "text": "Fue un gran compañero, con sólidos conocimientos y proactividad en la búsqueda de soluciones.\n Su capacidad de trabajo en equipo y comunicación con otras disciplinas fortaleció la creación de las soluciones que necesitábamos."
+        "headline": "Diseñador Gráfico, Multimedia y de Productos",
+        "text": "Fue un gran compañero, con sólidos conocimientos y proactividad en la búsqueda de soluciones. \n Su capacidad para trabajar en equipo y comunicarse con otras disciplinas fortaleció la creación de las soluciones que necesitábamos."
       },
       "giu": {
-        "headline": "Profesional en Gestión de Proyectos & Scrum Master Profesional",
-        "text": "Gran capacidad analítica y asertivo al explicar temas técnicos.\n Un joven y profesional ágil que prospera en cada Sprint."
+        "headline": "Profesional en Gestión de Proyectos y Scrum Master",
+        "text": "Grandes habilidades analíticas y asertividad en la explicación de problemas técnicos. \n Un joven profesional ágil que da lo mejor en cada Sprint."
       },
       "lino": {
-        "headline": "Director Creativo, Productor, Estratega Digital & de Medios Sociales",
-        "text": "Nico tiene grandes habilidades como desarrollador. Siempre atento, receptivo y proactivo en la resolución de cualquier problema.\n Nuestro producto creció gracias a sus grandes contribuciones e ideas.\n ¡Un placer trabajar contigo, Nico!"
+        "headline": "Director Creativo, Productor, Estratega Digital y de Redes Sociales",
+        "text": "Nico tiene grandes habilidades como desarrollador. Siempre atento, receptivo y proactivo para resolver cualquier problema. \n Nuestro producto creció gracias a sus grandes contribuciones e ideas. \n ¡Un placer trabajar contigo, Nico!"
       },
       "agus": {
         "headline": "Desarrollador Full Stack",
-        "text": "Una persona muy proactiva dispuesta a trabajar en equipo y colaborar.\n Capaz de enfrentar cualquier desafío para seguir creciendo y desarrollándose como profesional."
+        "text": "Una persona muy proactiva, dispuesta a trabajar como parte del equipo y colaborar. \n Capaz de enfrentar cualquier desafío para seguir creciendo y desarrollándose como profesional."
       }
     }
   },

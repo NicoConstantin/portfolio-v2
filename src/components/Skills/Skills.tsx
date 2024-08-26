@@ -8,6 +8,7 @@ import { IoIosCode } from 'react-icons/io';
 
 export default function Skills() {
   const t = useTranslations('Skills');
+  const softSkillsTranslated = softSkills.map((s) => t(`softSkills.${s}`));
   return (
     <div className="relative flex w-full flex-col">
       <div id="skills" className="absolute -top-[100px]" />
@@ -15,7 +16,7 @@ export default function Skills() {
       <p className="mb-8 text-lg text-gray-300 lg:text-xl">{t('description')}</p>
       <div className="grid w-full grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2">
         <SkillsCard icon={IoIosCode} titleKey="hard" skills={techSkills} />
-        <SkillsCard icon={LiaBrainSolid} titleKey="soft" skills={softSkills} />
+        <SkillsCard icon={LiaBrainSolid} titleKey="soft" skills={softSkillsTranslated} />
       </div>
     </div>
   );
