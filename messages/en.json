@@ -25,35 +25,29 @@
   "Projects": {
     "title": "Projects",
     "description": "Take a look at the projects where I've applied my skills to solve real-world problems",
-    "techs": "Technologies used",
     "blockContract": "Blocked by contract",
     "onProgress": "On Progress",
     "github": "View Code",
     "demo": "Live Demo",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Here goes a short description of the project",
-      "mission": "Here goes the mission of the project"
+      "description": "Here goes a short description of the project"
     },
     "musureGame": {
       "title": "MUSURE Game",
-      "description": "Here goes a short description of the project",
-      "mission": "Here goes the mission of the project"
+      "description": "Here goes a short description of the project"
     },
     "musureCreator": {
       "title": "MUSURE Creator",
-      "description": "Here goes a short description of the project",
-      "mission": "Here goes the mission of the project"
+      "description": "Here goes a short description of the project"
     },
     "provincia": {
       "title": "Provincia ART",
-      "description": "Here goes a short description of the project",
-      "mission": "Here goes the mission of the project"
+      "description": "Here goes a short description of the project"
     },
     "sosNails": {
       "title": "S.O.S nails",
-      "description": "Here goes a short description of the project",
-      "mission": "Here goes the mission of the project"
+      "description": "Here goes a short description of the project"
     }
   },
   "Skills": {

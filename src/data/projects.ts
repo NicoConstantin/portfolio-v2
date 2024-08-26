@@ -8,7 +8,7 @@ export const projects: Project[] = [
     type: 'desktop',
     onProgress: true,
     blockedByContract: false,
-    techs: ['Typescript', 'React', 'MongoDB'],
+    techs: ['Typescript', 'NextJS', 'TailwindCSS', 'MongoDB', 'NodeJS'],
   },
   {
     key: 'provincia',
