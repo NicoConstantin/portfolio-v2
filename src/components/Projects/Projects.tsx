@@ -24,7 +24,7 @@ export default function Projects() {
       </div>
       <div className="hidden w-full grid-cols-2 gap-4 md:grid lg:grid-cols-3">
         {projects.map((p) => (
-          <ProjectCard project={p} />
+          <ProjectCard project={p} key={p.key} />
         ))}
       </div>
     </div>
