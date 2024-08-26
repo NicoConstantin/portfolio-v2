@@ -1,6 +1,6 @@
 import { Tech } from '@/types';
 
-export const personalSkills: Tech[] = [
+export const techSkills: Tech[] = [
   'Javascript',
   'Typescript',
   'MongoDB',
@@ -13,7 +13,19 @@ export const personalSkills: Tech[] = [
   'Azure',
   'Firebase',
   'Redux',
+  'GIT',
+  'Docker',
   'ExpressJS',
   'CSS',
+  'Web3',
   'HTML',
+];
+
+export const softSkills: string[] = [
+  'Teamwork',
+  'Problem solving',
+  'Continuous learning',
+  'Adaptation',
+  'Curiosity',
+  'Perseverance',
 ];

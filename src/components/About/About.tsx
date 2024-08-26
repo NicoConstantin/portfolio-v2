@@ -9,15 +9,15 @@ export default function About() {
     <div className="relative flex flex-col">
       <div id="about" className="absolute -top-[100px]" />
       <h1 className={titleClass}>{t('title')}</h1>
-      <div className="flex w-full items-start">
-        <p className="text-lg lg:w-8/12 lg:text-xl">{t('description')}</p>
-        <Image
+      <div className="relative flex w-full items-start">
+        <p className="z-30 text-lg text-gray-300 lg:w-8/12 lg:text-xl">{t('description')}</p>
+        {/* <Image
           src={'/test.svg'}
           width={500}
           height={500}
           alt="neon guy"
-          className="-mt-16 hidden object-top lg:flex lg:w-4/12"
-        />
+          className="absolute -right-20 z-20 h-60 w-full object-top"
+        /> */}
       </div>
     </div>
   );

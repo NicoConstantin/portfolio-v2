@@ -33,7 +33,7 @@ export default function Header(): JSX.Element {
             <a
               href="mailto:nicoconstantin11@gmail.com"
               target="_blank"
-              className={`${baseClassButton} flex items-center justify-start gap-x-1 border border-light-purple bg-light-purple text-white hover:border-dark-purple hover:bg-dark-purple`}
+              className={`${baseClassButton} border-primary hover:border-secondary hover:bg-secondary bg-primary flex items-center justify-start gap-x-1 border text-white`}
             >
               <MdOutlineMailOutline size="1.5rem" className="hidden xs:flex" />
               {t('button1')}

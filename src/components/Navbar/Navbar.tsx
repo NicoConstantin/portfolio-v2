@@ -40,16 +40,16 @@ export default function Navbar(): JSX.Element {
     const Icon = isOpen ? CgClose : CgMenu;
     return (
       <button onClick={() => onClick()} className={'z-40 text-lg'}>
-        <Icon />
+        <Icon className="hover:!text-secondary !text-gray-300 transition-all duration-300 ease-in-out" />
       </button>
     );
   };
 
   return (
-    <nav className="fixed top-0 z-[80] flex h-14 w-full items-center justify-center bg-neutral-950/90 text-white shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
+    <nav className="fixed top-0 z-[80] flex h-14 w-full items-center justify-center bg-neutral-950/90 text-gray-300 shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
       <div className="z-50 flex h-full w-full max-w-screen-lg items-center justify-between px-6 md:px-8">
         <Link href={`#home`} className="z-40">
-          <PiCodeDuotone className="text-xl" />
+          <PiCodeDuotone className="hover:!text-secondary text-xl transition-all duration-300 ease-in-out" />
         </Link>
 
         {/*MENU HAMBURGUER */}
@@ -59,7 +59,7 @@ export default function Navbar(): JSX.Element {
             onClick={() => setIsHamburguerOpen(!isHamburguerOpen)}
           />
           <Slide in={isHamburguerOpen} direction={'top'}>
-            <div className="z-30 mt-14 flex flex-col items-center justify-start gap-y-4 rounded-b-lg bg-neutral-950/90 p-10 text-white shadow-lg">
+            <div className="z-30 mt-14 flex flex-col items-center justify-start gap-y-4 rounded-b-lg bg-neutral-950/90 p-10 text-gray-300 shadow-lg">
               {navOptions.map((option: string) => {
                 return (
                   <Link
@@ -99,7 +99,7 @@ export default function Navbar(): JSX.Element {
               <Link
                 href={`#${option}`}
                 key={option}
-                className="text-lg text-white transition-all duration-300 ease-in-out hover:text-light-purple"
+                className="hover:text-secondary text-lg text-gray-300 transition-all duration-300 ease-in-out"
               >
                 {t(option)}
               </Link>
@@ -113,7 +113,7 @@ export default function Navbar(): JSX.Element {
                 className="bg-transparent hover:bg-transparent"
                 icon={
                   <MdLanguage
-                    className="cursor-pointer text-lg text-white transition-all duration-300 ease-in-out hover:!text-light-purple"
+                    className="hover:!text-secondary cursor-pointer text-lg !text-gray-300 transition-all duration-300 ease-in-out"
                     onClick={() => setIsLangMenuOpen((prev) => !prev)}
                   />
                 }
@@ -129,7 +129,7 @@ export default function Navbar(): JSX.Element {
                     href="/"
                     locale={lng}
                     key={lng}
-                    className="text-md transition-all duration-300 ease-in-out hover:text-light-purple"
+                    className="text-md hover:text-primary text-gray-300 transition-all duration-300 ease-in-out"
                     onClick={() => setIsLangMenuOpen(false)}
                   >
                     {t(`Languages.${lng}`)}

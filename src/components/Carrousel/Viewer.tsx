@@ -9,10 +9,19 @@ type ViewerProps = {
   items: Referrer[] | Project[];
   options?: EmblaOptionsType;
   renderItem: (item: Referrer | Project) => React.ReactNode;
+  slidesOnScreen?: number;
 };
 
-export default function Viewer({ items, options, renderItem }: ViewerProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+export default function Viewer({ items, options, renderItem, slidesOnScreen = 1 }: ViewerProps) {
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      ...options,
+      align: 'start',
+      slidesToScroll: slidesOnScreen,
+      containScroll: 'trimSnaps',
+    },
+    [Autoplay()],
+  );
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -33,7 +42,7 @@ export default function Viewer({ items, options, renderItem }: ViewerProps) {
         <div className="flex min-h-fit w-full">
           {items.map((item) => (
             <div
-              className="flex w-full min-w-0 flex-none items-center justify-center px-1.5"
+              className={`flex w-full min-w-0 flex-none items-center justify-center ${slidesOnScreen > 1 ? 'mr-4 md:w-[calc(50%-8px)]' : 'mr-1'}`}
               key={item.key}
             >
               {renderItem(item)}

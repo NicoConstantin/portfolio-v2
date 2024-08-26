@@ -13,8 +13,11 @@ export type Tech =
   | 'Azure'
   | 'Firebase'
   | 'Redux'
+  | 'GIT'
+  | 'Docker'
   | 'ExpressJS'
   | 'CSS'
+  | 'Web3'
   | 'HTML';
 
 export type TechComboProps = {
@@ -31,7 +34,8 @@ export interface Project {
   alt: string;
   type: 'mobile' | 'desktop';
   techs: Tech[];
-  mission: boolean;
+  onProgress: boolean;
+  blockedByContract: boolean;
   demo?: string;
   code?: string;
 }
