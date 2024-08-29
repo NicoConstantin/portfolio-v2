@@ -47,7 +47,7 @@ export default async function RootLayout({
         <Providers>
           <Navbar />
           <div className="absolute inset-0 -z-20">
-            <div className="animate-gradient bg-size-150 absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-gray-950 to-black"></div>
+            <div className="absolute inset-0 animate-gradient bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-gray-950 to-black bg-size-150"></div>
           </div>
           <main className={`flex h-full w-full justify-center pb-16`}>{children}</main>
           <Footer />

@@ -35,7 +35,6 @@ export interface Project {
   type: 'mobile' | 'desktop';
   techs: Tech[];
   onProgress: boolean;
-  blockedByContract: boolean;
   demo?: string;
   code?: string;
 }
