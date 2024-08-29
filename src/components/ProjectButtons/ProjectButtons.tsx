@@ -9,10 +9,10 @@ export default function ProjectButtons({ project }: { project: Project }) {
   const t = useTranslations('Projects');
   return (
     <ButtonGroup>
-      <Tooltip label={project.blockedByContract ? t('blockContract') : t('onProgress')}>
+      <Tooltip label={project.onProgress ? t('onProgress') : null}>
         <Button
           size={'sm'}
-          isDisabled={!project.code || project.blockedByContract}
+          isDisabled={!project.code}
           leftIcon={<LuGithub size={'1rem'} />}
           className="border border-white/30 bg-white/20 text-xs font-normal text-white transition duration-300 ease-in-out hover:bg-white/40 xs:text-sm"
         >
@@ -21,12 +21,12 @@ export default function ProjectButtons({ project }: { project: Project }) {
           </a>
         </Button>
       </Tooltip>
-      <Tooltip label={project.blockedByContract ? t('blockContract') : t('onProgress')}>
+      <Tooltip label={project.onProgress ? t('onProgress') : null}>
         <Button
           size={'sm'}
-          isDisabled={!project.demo || project.blockedByContract}
+          isDisabled={!project.demo}
           leftIcon={<FiExternalLink size={'1rem'} />}
-          className="bg-primary hover:bg-secondary text-xs font-normal text-white transition duration-300 ease-in-out xs:text-sm"
+          className="bg-primary text-xs font-normal text-white transition duration-300 ease-in-out hover:bg-secondary xs:text-sm"
         >
           <a href={project.demo} target="_blank">
             {t('demo')}
