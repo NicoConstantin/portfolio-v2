@@ -7,7 +7,6 @@ export const projects: Project[] = [
     alt: 'nails photo',
     type: 'desktop',
     onProgress: true,
-    blockedByContract: false,
     techs: ['Typescript', 'NextJS', 'TailwindCSS', 'MongoDB', 'NodeJS'],
   },
   {
@@ -16,7 +15,6 @@ export const projects: Project[] = [
     alt: 'henry logo',
     type: 'desktop',
     onProgress: false,
-    blockedByContract: false,
     techs: ['Javascript', 'HTML', 'CSS', 'React', 'Redux', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
     demo: 'https://youtu.be/armv7gxWrvs?si=ZKwo92UbMfI_A9yA',
     code: 'https://github.com/MaxiSanchez600/Henry-Store-PF',
