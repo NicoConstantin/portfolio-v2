@@ -1,4 +1,5 @@
 import About from '@/components/About/About';
+import ExperienceTimeline from '@/components/ExperienceTimeline/ExperienceTimeline';
 import Header from '@/components/Header/Header';
 import Projects from '@/components/Projects/Projects';
 import Recommendations from '@/components/Recommendations/Recommendations';
@@ -12,8 +13,9 @@ export default function Home({ params: { locale } }: Readonly<{ params: { locale
     <div className="flex h-full min-h-screen max-w-screen-lg flex-col gap-y-40 overflow-hidden px-6 text-white md:px-8">
       <Header />
       <About />
-      <Projects />
+      <ExperienceTimeline />
       <Skills />
+      <Projects />
       <Recommendations />
     </div>
   );
