@@ -20,73 +20,83 @@
   },
   "About": {
     "title": "À propos de moi",
-    "description": "Je suis un développeur de logiciels avec plus de deux ans d'expérience, spécialisé dans le développement front-end. Diplômé en tant que Développeur Full Stack, j'aime créer des solutions modernes et efficaces. Je viens de m'installer en Suisse, où je continue à développer mes compétences tout en m'adaptant à un nouvel environnement."
+    "description": "Je suis un développeur de logiciels avec plus de 2 ans d'expérience, spécialisé dans le <highlight>Développement Frontend</highlight>. En tant que Développeur Full Stack, j'aime résoudre des problèmes réels à travers des logiciels qui améliorent les vies ou les entreprises. \n\n Je suis passionné par le fait d'être impliqué dans le cycle de vie d'un produit <italic>—de sa conception à son évolution—</italic> en veillant à ce qu'il apporte une véritable valeur et un impact."
+  },
+  "Experience": {
+    "title": "Expérience",
+    "description": "Découvrez mon parcours à travers diverses entreprises dans le développement de logiciels et l'enseignement, des startups aux entreprises technologiques établies.",
+    "works": {
+      "cloudLegion": {
+        "title": "Cloud Legion",
+        "description": "J'ai contribué à la conception et au développement de solutions <main>Full Stack</main>, en travaillant avec <second>JavaScript</second> et des technologies telles que <second>NextJS</second>, <second>Redux</second>, <second>TailwindCSS</second>, <second>ExpressJS</second> et <second>NodeJS</second>. Notre équipe a utilisé des outils comme <second>Docker</second>, <second>Sentry.io</second> et <second>CI/CD</second> pipelines sur <second>Azure</second> pour garantir un code de haute qualité et sécurisé. De plus, nous avons collaboré étroitement avec l'équipe du client, en fournissant <main>formation et conférences techniques</main> sur les nouvelles technologies mises en place, leur fonctionnement et leur utilisation. Nous les avons également aidés à adopter Scrum et à réaliser des démonstrations de sprint.",
+        "date": "Mars 2023 – Mars 2024"
+      },
+      "musure": {
+        "title": "MUSURE world",
+        "description": "Chez MUSURE, une startup dédiée à la création de solutions numériques innovantes, nous avons développé un jeu click-to-earn et un outil de création de contenu 3D conçu pour aider les créateurs de contenu à monétiser leur travail. Contribuant au développement <main>Frontend et Backend</main>, nous avons utilisé des technologies telles que <second>JavaScript</second>, <second>React</second>, <second>Redux</second>, <second>TailwindCSS</second>, <second>NodeJS</second>, <second>Firebase</second> et <second>Moralis</second>. Nous avons collaboré étroitement avec les équipes UX/UI et économie sous la méthodologie Scrum, en abordant des défis liés à l'intégration de la cryptomonnaie et au <second>Web3</second>.",
+        "date": "Octobre 2021 – Novembre 2022"
+      },
+      "henry": {
+        "title": "Henry",
+        "description": "J'ai <main>aidé les nouveaux étudiants</main> en les guidant à travers des défis en temps réel de <second>JavaScript</second> et en les instruisant sur le flux de <second>GIT</second> pour les préparer au bootcamp. J'ai également collaboré à l'amélioration des procédures d'entrée au bootcamp.",
+        "date": "Mai 2021 – Juillet 2021"
+      }
+    }
   },
   "Projects": {
     "title": "Projets",
-    "description": "Découvrez les projets où j'ai appliqué mes compétences pour résoudre des problèmes réels.",
+    "description": "Découvrez mes projets annexes où j'ai appliqué mes compétences pour résoudre des problèmes réels.",
     "blockContract": "Bloqué par contrat",
     "onProgress": "En cours",
     "github": "Voir le code",
     "demo": "Démo en direct",
     "henry": {
       "title": "Henry E-commerce",
-      "description": "Création d'une plateforme de commerce électronique avec un panneau d'administration pour gérer et vendre le merchandising de Henry."
-    },
-    "musureGame": {
-      "title": "MUSURE Game",
-      "description": "Développement d'un jeu web où les utilisateurs peuvent personnaliser des avatars, jouer à des mini-jeux et gagner des récompenses."
-    },
-    "musureCreator": {
-      "title": "MUSURE Creator",
-      "description": "Développement d'une plateforme permettant aux créateurs de contenu et aux joueurs de créer, acheter et vendre des actifs numériques sur un marché."
-    },
-    "provincia": {
-      "title": "Provincia ART",
-      "description": "Mise à jour d'un site web interne pour les producteurs d'assurance, axée sur la modernisation de la technologie et l'amélioration de la sécurité."
+      "description": "Création d'une plateforme de commerce électronique avec un panneau d'administration pour gérer et vendre les produits dérivés de Henry."
     },
     "sosNails": {
       "title": "S.O.S Beauté",
-      "description": "Développement d'un site web pour présenter des travaux d'ongles, gérer les promotions et traiter le contenu et les rendez-vous via un panneau d'administration."
+      "description": "Développement d'un site web pour afficher des œuvres de manucure, gérer des promotions et gérer le contenu et les rendez-vous via un panneau d'administration."
     }
   },
   "Skills": {
     "title": "Compétences",
-    "description": "Un mélange de savoir-faire technique et de compétences interpersonnelles essentielles, de la programmation à la collaboration en équipe.",
-    "soft": "Compétences Interpersonnelles",
+    "description": "Un mélange de savoir-faire technique et de compétences douces essentielles, de la programmation à la collaboration en équipe.",
+    "soft": "Compétences Douces",
     "hard": "Compétences Techniques",
     "softSkills": {
       "teamwork": "Travail en équipe",
       "problemSolving": "Résolution de problèmes",
       "continuousLearning": "Apprentissage continu",
-      "adaptation": "Adaptation",
+      "learningAgility": "Agilité d'apprentissage",
+      "adaptability": "Adaptabilité",
       "curiosity": "Curiosité",
       "perseverance": "Persévérance"
     }
   },
   "Recommendations": {
     "title": "Recommandations",
-    "description": "Retours de ceux qui ont travaillé avec moi, reflétant mes compétences, mon éthique de travail et mon esprit d'équipe.",
+    "description": "Avis de ceux qui ont travaillé avec moi, reflétant mes compétences, mon éthique de travail et mon travail d'équipe.",
     "received": {
       "tano": {
-        "headline": "Fondateur et CEO de MUSURE world",
-        "text": "Nico est l'un des meilleurs collaborateurs avec qui j'ai eu le plaisir de travailler ! \n Il comprend toujours les problèmes et est toujours prêt à les résoudre avec une perspective Lean. \n J'ai hâte de continuer à travailler avec lui !"
+        "headline": "Fondateur et PDG de MUSURE world",
+        "text": "Nico est l'un des meilleurs avec qui j'ai eu le plaisir de travailler ! \n Il comprend toujours les problèmes et est toujours prêt à les résoudre avec une perspective Lean. \n J'ai hâte de continuer à travailler avec lui !"
       },
       "fer": {
         "headline": "Designer Graphique, Multimédia et Produit",
-        "text": "Il a été un excellent partenaire, avec des connaissances solides et une proactivité dans la recherche de solutions. \n Sa capacité à travailler en équipe et sa communication avec d'autres disciplines ont renforcé la création des solutions dont nous avions besoin."
+        "text": "Il a été un excellent partenaire, avec des connaissances solides et une proactivité dans la recherche de solutions. \n Sa capacité à travailler en équipe et à communiquer avec d'autres disciplines a renforcé la création des solutions dont nous avions besoin."
       },
       "giu": {
-        "headline": "Professionnel en Gestion de Projet & Scrum Master",
+        "headline": "Professionnel en Gestion de Projet et Scrum Master",
         "text": "Excellentes compétences analytiques et assertif dans l'explication des problèmes techniques. \n Un jeune professionnel agile qui donne le meilleur de lui-même à chaque Sprint."
       },
       "lino": {
-        "headline": "Directeur Créatif, Producteur, Stratège Digital & Réseaux Sociaux",
-        "text": "Nico possède de grandes compétences en tant que développeur. Toujours attentif, réactif et proactif pour résoudre tout problème. \n Notre produit a grandi grâce à ses précieuses contributions et idées. \n Un plaisir de travailler avec toi, Nico !"
+        "headline": "Directeur Créatif, Producteur, Stratège Digital et Réseaux Sociaux",
+        "text": "Nico possède d'excellentes compétences en tant que développeur. Toujours attentif, réactif et proactif pour résoudre tout problème. \n Notre produit a progressé grâce à ses grandes contributions et idées. \n Un plaisir de travailler avec toi, Nico !"
       },
       "agus": {
         "headline": "Développeur Full Stack",
-        "text": "Une personne très proactive, prête à travailler en équipe et à collaborer. \n Capable de relever tous les défis pour continuer à croître et à se développer comme professionnel."
+        "text": "Une personne très proactive, prête à travailler en équipe et à collaborer. \n Capable de relever tout défi pour continuer à grandir et se développer en tant que professionnel."
       }
     }
   },
