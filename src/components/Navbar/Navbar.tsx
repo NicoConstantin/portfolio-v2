@@ -22,7 +22,7 @@ export default function Navbar(): JSX.Element {
   const popoverRef = useRef(null);
   const [isHamburguerOpen, setIsHamburguerOpen] = useState<boolean>(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState<boolean>(false);
-  const navOptions: string[] = ['home', 'about', 'projects', 'skills', 'recommendations'];
+  const navOptions: string[] = ['home', 'about', 'skills', 'projects', 'recommendations'];
   const langOptions: string[] = ['en', 'fr', 'es'];
 
   useOutsideClick({
@@ -40,7 +40,7 @@ export default function Navbar(): JSX.Element {
     const Icon = isOpen ? CgClose : CgMenu;
     return (
       <button onClick={() => onClick()} className={'z-40 text-lg'}>
-        <Icon className="hover:!text-secondary !text-gray-300 transition-all duration-300 ease-in-out" />
+        <Icon className="!text-gray-300 transition-all duration-300 ease-in-out hover:!text-secondary" />
       </button>
     );
   };
@@ -49,7 +49,7 @@ export default function Navbar(): JSX.Element {
     <nav className="fixed top-0 z-[80] flex h-14 w-full items-center justify-center bg-neutral-950/90 text-gray-300 shadow-lg backdrop-blur backdrop-brightness-110 backdrop-saturate-150">
       <div className="z-50 flex h-full w-full max-w-screen-lg items-center justify-between px-6 md:px-8">
         <Link href={`#home`} className="z-40">
-          <PiCodeDuotone className="hover:!text-secondary text-xl transition-all duration-300 ease-in-out" />
+          <PiCodeDuotone className="text-xl transition-all duration-300 ease-in-out hover:!text-secondary" />
         </Link>
 
         {/*MENU HAMBURGUER */}
@@ -99,7 +99,7 @@ export default function Navbar(): JSX.Element {
               <Link
                 href={`#${option}`}
                 key={option}
-                className="hover:text-secondary text-lg text-gray-300 transition-all duration-300 ease-in-out"
+                className="text-lg text-gray-300 transition-all duration-300 ease-in-out hover:text-secondary"
               >
                 {t(option)}
               </Link>
@@ -113,7 +113,7 @@ export default function Navbar(): JSX.Element {
                 className="bg-transparent hover:bg-transparent"
                 icon={
                   <MdLanguage
-                    className="hover:!text-secondary cursor-pointer text-lg !text-gray-300 transition-all duration-300 ease-in-out"
+                    className="cursor-pointer text-lg !text-gray-300 transition-all duration-300 ease-in-out hover:!text-secondary"
                     onClick={() => setIsLangMenuOpen((prev) => !prev)}
                   />
                 }
@@ -129,7 +129,7 @@ export default function Navbar(): JSX.Element {
                     href="/"
                     locale={lng}
                     key={lng}
-                    className="text-md hover:text-primary text-gray-300 transition-all duration-300 ease-in-out"
+                    className="text-md text-gray-300 transition-all duration-300 ease-in-out hover:text-primary"
                     onClick={() => setIsLangMenuOpen(false)}
                   >
                     {t(`Languages.${lng}`)}
