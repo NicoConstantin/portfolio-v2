@@ -1,2 +1,2 @@
 export const titleClass: string =
-  'bg-gradient-to-t from-white to-secondary bg-clip-text text-4xl text-transparent mb-10 w-fit';
+  'mb-6 font-display text-3xl sm:text-4xl font-bold tracking-tight dark:text-white md:text-5xl'

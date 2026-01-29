@@ -1,16 +1,14 @@
-import About from '@/components/About/About';
-import ExperienceTimeline from '@/components/ExperienceTimeline/ExperienceTimeline';
-import Header from '@/components/Header/Header';
-import Projects from '@/components/Projects/Projects';
-import Recommendations from '@/components/Recommendations/Recommendations';
-import Skills from '@/components/Skills/Skills';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import About from '@/components/sections/about'
+import ExperienceTimeline from '@/components/sections/experience-timeline'
+import Header from '@/components/sections/header'
+import Projects from '@/components/sections/projects'
+import Recommendations from '@/components/sections/recommendations'
+import Skills from '@/components/sections/skills'
 
-export default function Home({ params: { locale } }: Readonly<{ params: { locale: string } }>) {
-  unstable_setRequestLocale(locale);
-
+export default function Home() {
   return (
-    <div className="flex h-full min-h-screen max-w-screen-lg flex-col gap-y-40 overflow-hidden px-6 text-white md:px-8">
+    <div className="flex h-full min-h-screen w-full max-w-6xl mx-auto flex-col gap-y-40 px-6 md:px-8">
+      <div className="absolute inset-0 hero-glow" />
       <Header />
       <About />
       <ExperienceTimeline />
@@ -18,5 +16,5 @@ export default function Home({ params: { locale } }: Readonly<{ params: { locale
       <Projects />
       <Recommendations />
     </div>
-  );
+  )
 }

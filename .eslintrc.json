@@ -1,18 +1,30 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
-  "plugins": ["react", "@typescript-eslint"],
-  "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module"
-  },
+  "extends": ["next/core-web-vitals", "next/typescript", "plugin:prettier/recommended", "eslint:recommended"],
   "rules": {
-    // Add your custom ESLint rules here
+    "semi": ["error", "never"],
+    "no-console": "warn",
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ],
+    "react/self-closing-comp": "warn",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ]
   }
 }
