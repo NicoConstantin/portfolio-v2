@@ -4,6 +4,7 @@ import { projects } from '@/data/projects'
 import { titleClass } from '@/data/defaultClasses'
 import ProjectCard from '../cards/project-card'
 import ProjectViewerCard from '../cards/project-carrousel-card'
+import FeaturedNexus from './featured-nexus'
 import {
   Carousel,
   CarouselContent,
@@ -21,6 +22,7 @@ export default function Projects() {
       <div id="projects" className="absolute -top-[100px]" />
       <h1 className={titleClass}>{t('title')}</h1>
       <p className="mb-8 text-md lg:text-lg">{t('description')}</p>
+      <FeaturedNexus />
       <div className="flex md:hidden">
         <Carousel className="w-full">
           <CarouselContent>

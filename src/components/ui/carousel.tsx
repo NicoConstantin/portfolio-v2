@@ -44,16 +44,15 @@ function Carousel({ orientation = 'horizontal', setApi, className, children, ...
     const viewport = viewportRef.current
     if (!viewport) return
 
+    const epsilon = 2
     if (orientation === 'horizontal') {
-      const maxScroll = viewport.scrollWidth - viewport.clientWidth
-      setCanScrollPrev(viewport.scrollLeft > 0)
-      setCanScrollNext(viewport.scrollLeft < maxScroll - 1)
+      setCanScrollPrev(viewport.scrollLeft > epsilon)
+      setCanScrollNext(viewport.scrollLeft + viewport.clientWidth < viewport.scrollWidth - epsilon)
       return
     }
 
-    const maxScroll = viewport.scrollHeight - viewport.clientHeight
-    setCanScrollPrev(viewport.scrollTop > 0)
-    setCanScrollNext(viewport.scrollTop < maxScroll - 1)
+    setCanScrollPrev(viewport.scrollTop > epsilon)
+    setCanScrollNext(viewport.scrollTop + viewport.clientHeight < viewport.scrollHeight - epsilon)
   }, [orientation])
 
   const scrollPrev = React.useCallback(() => {

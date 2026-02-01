@@ -85,7 +85,7 @@
 }
 
 .dark {
-  --background: oklch(0.1944 0.0374 306.23); /* background-dark (#191022) */
+  --background: oklch(18.311% 0.0309 263.38); /* background-dark (#0b1220) */
   --foreground: oklch(86.9% 0.022 252.894);
   --card: oklch(20.197% 0.0079 285.67); /* surface-dark (#16161a) */
   --card-foreground: oklch(86.9% 0.022 252.894); /* slate-300 */
@@ -124,6 +124,7 @@
   }
   html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
   }
 }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Languages, Moon, Sun, Menu, CodeXml } from 'lucide-react'
+import { Languages, Moon, Sun, Menu, CodeXml, Loader2 } from 'lucide-react'
 
 export default function Navbar() {
   const t = useTranslations('Navbar')
@@ -17,15 +17,32 @@ export default function Navbar() {
   const params = useParams<{ locale?: string }>()
   const locale = typeof params?.locale === 'string' ? params.locale : 'en'
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
+  const [mounted, setMounted] = useState(false)
   const navOptions: string[] = ['home', 'about', 'skills', 'projects', 'recommendations']
   const langOptions: string[] = ['en', 'fr', 'es']
 
-  const toggleTheme = () => {
-    const isDark = resolvedTheme === 'dark'
-    setTheme(isDark ? 'light' : 'dark')
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const isDark = mounted && resolvedTheme === 'dark'
+
+  let themeLabel = 'Toggle theme'
+  let themeIcon = <Loader2 className="animate-spin" />
+  if (mounted) {
+    if (isDark) {
+      themeLabel = 'Switch to light mode'
+      themeIcon = <Sun />
+    } else {
+      themeLabel = 'Switch to dark mode'
+      themeIcon = <Moon />
+    }
   }
 
-  const isDark = resolvedTheme === 'dark'
+  const toggleTheme = () => {
+    if (!mounted) return
+    setTheme(isDark ? 'light' : 'dark')
+  }
 
   return (
     <nav className="fixed top-0 z-50 flex h-16 w-full items-center justify-center border-b backdrop-blur-md bg-background/80">
@@ -67,9 +84,10 @@ export default function Navbar() {
                 <Button
                   variant="ghost"
                   onClick={toggleTheme}
-                  aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                  aria-label={themeLabel}
+                  disabled={!mounted}
                 >
-                  {isDark ? <Sun /> : <Moon />}
+                  {themeIcon}
                 </Button>
 
                 <div className="border-border bg-surface-2 inline-flex rounded-full border p-1">
@@ -120,9 +138,10 @@ export default function Navbar() {
               variant="ghost"
               className="hover:text-primary transition-colors"
               onClick={toggleTheme}
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={themeLabel}
+              disabled={!mounted}
             >
-              {isDark ? <Sun /> : <Moon />}
+              {themeIcon}
             </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -133,7 +152,7 @@ export default function Navbar() {
               <DropdownMenuContent className="z-50" align="end">
                 {langOptions.map((lng: string) => {
                   return (
-                    <DropdownMenuItem key={lng} className="cursor-pointer">
+                    <DropdownMenuItem asChild key={lng} className="cursor-pointer">
                       <Link
                         href="/"
                         locale={lng}

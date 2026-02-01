@@ -13,7 +13,7 @@
   },
   "Header": {
     "hello": "Hello, I'm",
-    "description": "Software Developer | Based on Swiss",
+    "description": "Full Stack Developer | Based in Switzerland",
     "button1": "Contact Me",
     "button2": "Download CV",
     "scroll": "Scroll down"
@@ -46,8 +46,37 @@
   "Projects": {
     "title": "Projects",
     "description": "Take a look at my side projects where I've applied my skills to solve real-world problems.",
+    "featured": {
+      "title": "Featured Project",
+      "eyebrow": "Featured",
+      "nexus": {
+        "name": "NEXUS",
+        "oneLiner": "A multilingual appointment booking and business management platform for service businesses.",
+        "problemTitle": "Why it matters",
+        "problem": "Service businesses often spend time managing bookings manually (messages/calls, reschedules, no-shows). NEXUS streamlines scheduling for businesses and enables clients to self-book in just a few steps — across languages.",
+        "featuresTitle": "Key highlights",
+        "features": {
+          "twoSided": "Two-sided product: business + client dashboards and flows.",
+          "internationalFirst": "International-first: built with a 4-language UI (EN/ES/DE/FR) from day one.",
+          "hours": "Real-world schedules: opening hours + special hours/holidays.",
+          "roles": "Role-based business access and profile switching.",
+          "foundation": "MVP-first foundation designed to scale into analytics, payments, staff, and more."
+        },
+        "badges": {
+          "multilingual": "Multilingual (EN/ES/DE/FR)",
+          "twoSided": "Business + Client",
+          "darkFirst": "Dark-first UI"
+        },
+        "cta": {
+          "demo": "Open demo",
+          "codePrivate": "GitHub (private)",
+          "codeHint": "Private repositories — available on request."
+        },
+        "imagesAlt": "NEXUS screenshot {index}"
+      }
+    },
     "blockContract": "Blocked by contract",
-    "onProgress": "On Progress",
+    "onProgress": "In Progress",
     "github": "View Code",
     "demo": "Live Demo",
     "henry": {
@@ -87,8 +116,8 @@
         "text": "He was a great partner, with solid knowledge and proactivity in seeking solutions. \n His ability to work in a team and communication with other disciplines strengthened the creation of the solutions we needed"
       },
       "giu": {
-        "headline": "Project Management Profesional & Scrum Master Profesional",
-        "text": "Great analytical skills and assertive in explaining technical issues. \n A young and professional agilist threving the best in every Sprint."
+        "headline": "Project Management Professional & Scrum Master",
+        "text": "Great analytical skills and assertive in explaining technical issues.\nA young, professional agile practitioner who brings out the best in every sprint."
       },
       "lino": {
         "headline": "Creative Director, Producer, Digital & Social Media Strategist",

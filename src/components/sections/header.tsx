@@ -3,15 +3,25 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { Mail, ArrowDown } from 'lucide-react'
 import { Button } from '../ui/button'
+import Particles from '../common/particles'
 
 export default function Header() {
   const t = useTranslations('Header')
 
   return (
     <section id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-20 md:pt-32 xl:pt-40">
+      <Particles className="absolute inset-0 -z-20 opacity-95 mix-blend-screen" />
       <div className="xs:mt-0 absolute -z-10 mt-4 -ml-6 rotate-180">
-        <div className="absolute left-1/2 top-1/2 h-[min(28rem,100vw)] w-[min(28rem,100vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl" />
-        <Image src="/headerNeon.svg" width={600} height={800} className="relative" alt="bg-header" />
+        <Particles
+          count={40}
+          className="absolute inset-0 z-0 opacity-95 mix-blend-screen"
+          style={{
+            WebkitMaskImage: 'radial-gradient(circle at center, transparent 0%, transparent 28%, #000 58%, #000 100%)',
+            maskImage: 'radial-gradient(circle at center, transparent 0%, transparent 28%, #000 58%, #000 100%)',
+          }}
+        />
+        <div className="absolute left-1/2 top-1/2 z-0 h-[min(28rem,100vw)] w-[min(28rem,100vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl" />
+        <Image src="/headerNeon.svg" width={600} height={800} className="relative z-10" alt="bg-header" />
       </div>
 
       <div className="z-30 flex h-full w-full grow flex-col justify-between pt-20">

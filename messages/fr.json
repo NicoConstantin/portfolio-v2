@@ -13,9 +13,9 @@
   },
   "Header": {
     "hello": "Bonjour, je suis",
-    "description": "Développeur de logiciels | Résidant en Suisse",
+    "description": "Développeur Full-Stack | Basé en Suisse",
     "button1": "Contactez-moi",
-    "button2": "Télécharger CV",
+    "button2": "Télécharger le CV",
     "scroll": "Faites défiler vers le bas"
   },
   "About": {
@@ -46,6 +46,35 @@
   "Projects": {
     "title": "Projets",
     "description": "Découvrez mes projets annexes où j'ai appliqué mes compétences pour résoudre des problèmes réels.",
+    "featured": {
+      "title": "Projet mis en avant",
+      "eyebrow": "Mis en avant",
+      "nexus": {
+        "name": "NEXUS",
+        "oneLiner": "Une plateforme multilingue de prise de rendez-vous et de gestion pour les entreprises de services.",
+        "problemTitle": "Pourquoi c'est important",
+        "problem": "Les entreprises qui fonctionnent sur rendez-vous perdent souvent du temps à gérer les réservations manuellement (messages/appels, reports, no-shows). NEXUS simplifie la planification côté business et permet aux clients de réserver en libre-service en quelques étapes — dans plusieurs langues.",
+        "featuresTitle": "Points clés",
+        "features": {
+          "twoSided": "Produit bi-face : tableaux de bord et parcours pour business + client.",
+          "internationalFirst": "International dès le départ : UI en 4 langues (EN/ES/DE/FR).",
+          "hours": "Planning réaliste : horaires d'ouverture + horaires spéciaux/jours fériés.",
+          "roles": "Accès par rôles et changement de profil dans la session.",
+          "foundation": "Base MVP conçue pour évoluer vers analytics, paiements, staff, et plus."
+        },
+        "badges": {
+          "multilingual": "Multilingue (EN/ES/DE/FR)",
+          "twoSided": "Business + Client",
+          "darkFirst": "UI dark-first"
+        },
+        "cta": {
+          "demo": "Ouvrir la démo",
+          "codePrivate": "GitHub (privé)",
+          "codeHint": "Dépôts privés — accès sur demande."
+        },
+        "imagesAlt": "Capture NEXUS {index}"
+      }
+    },
     "blockContract": "Bloqué par contrat",
     "onProgress": "En cours",
     "github": "Voir le code",
@@ -83,11 +112,11 @@
         "text": "Nico est l'un des meilleurs avec qui j'ai eu le plaisir de travailler ! \n Il comprend toujours les problèmes et est toujours prêt à les résoudre avec une perspective Lean. \n J'ai hâte de continuer à travailler avec lui !"
       },
       "fer": {
-        "headline": "Designer Graphique, Multimédia et Produit",
+        "headline": "Designer graphique, multimédia et produit",
         "text": "Il a été un excellent partenaire, avec des connaissances solides et une proactivité dans la recherche de solutions. \n Sa capacité à travailler en équipe et à communiquer avec d'autres disciplines a renforcé la création des solutions dont nous avions besoin."
       },
       "giu": {
-        "headline": "Professionnel en Gestion de Projet et Scrum Master",
+        "headline": "Professionnel en gestion de projet et Scrum Master",
         "text": "Excellentes compétences analytiques et assertif dans l'explication des problèmes techniques. \n Un jeune professionnel agile qui donne le meilleur de lui-même à chaque Sprint."
       },
       "lino": {

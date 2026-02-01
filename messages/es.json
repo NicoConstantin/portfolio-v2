@@ -13,7 +13,7 @@
   },
   "Header": {
     "hello": "Hola, soy",
-    "description": "Desarrollador de Software | Ubicado en Suiza",
+    "description": "Desarrollador de Software | Con base en Suiza",
     "button1": "Contáctame",
     "button2": "Descargar CV",
     "scroll": "Desplázate hacia abajo"
@@ -46,6 +46,35 @@
   "Projects": {
     "title": "Proyectos",
     "description": "Echa un vistazo a mis proyectos paralelos donde he aplicado mis habilidades para resolver problemas del mundo real.",
+    "featured": {
+      "title": "Proyecto destacado",
+      "eyebrow": "Destacado",
+      "nexus": {
+        "name": "NEXUS",
+        "oneLiner": "Una plataforma multilingüe de reservas de turnos y gestión de negocio para empresas de servicios.",
+        "problemTitle": "Por qué importa",
+        "problem": "Muchos negocios por turnos pierden tiempo gestionando reservas manualmente (mensajes/llamadas, reprogramaciones, ausencias). NEXUS centraliza la operación para el negocio y permite que los clientes reserven en autoservicio en pocos pasos — en varios idiomas.",
+        "featuresTitle": "Puntos clave",
+        "features": {
+          "twoSided": "Producto de dos lados: dashboards y flujos para negocio + cliente.",
+          "internationalFirst": "Pensado para mercados internacionales: UI en 4 idiomas (EN/ES/DE/FR) desde el día uno.",
+          "hours": "Horarios reales: horas de apertura + horas especiales/feriados.",
+          "roles": "Acceso por roles y cambio de perfil dentro de la sesión.",
+          "foundation": "Base MVP lista para escalar a analíticas, pagos, staff y más."
+        },
+        "badges": {
+          "multilingual": "Multilingüe (EN/ES/DE/FR)",
+          "twoSided": "Negocio + Cliente",
+          "darkFirst": "UI dark-first"
+        },
+        "cta": {
+          "demo": "Abrir demo",
+          "codePrivate": "GitHub (privado)",
+          "codeHint": "Repositorios privados — disponibles a pedido."
+        },
+        "imagesAlt": "Captura de NEXUS {index}"
+      }
+    },
     "blockContract": "Bloqueado por contrato",
     "onProgress": "En progreso",
     "github": "Ver código",
@@ -101,6 +130,6 @@
     }
   },
   "Footer": {
-    "copyright": "@ 2024 Creado Por Constantin Nicolas"
+    "copyright": "@ 2024 Creado por Constantin Nicolas"
   }
 }
