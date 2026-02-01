@@ -1,9 +1,16 @@
+'use client'
+
 import { Link } from '@/i18n/navigation'
 import { CodeXml, Github, Linkedin, FileUser } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
+import { getCvDownload } from '@/data/cv'
 
 export default function Footer() {
   const t = useTranslations('')
+  const params = useParams<{ locale?: string }>()
+  const locale = typeof params?.locale === 'string' ? params.locale : 'en'
+  const cv = getCvDownload(locale)
   const footerOptions: string[] = ['home', 'about', 'projects']
   const iconClass: string = 'text-base sm:text-lg cursor-pointer transition-colors hover:text-primary'
 
@@ -37,10 +44,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/nico-constantin/" target={'_blank'}>
             <Linkedin className={iconClass} />
           </a>
-          <a
-            href="https://www.dropbox.com/scl/fi/8ny7rco9z8j7b3kmmnyg0/Nicolas-Constantin-Full-Stack-Developer.pdf?rlkey=vm3mm3pu2g22qnjrtu1m6xf3l&st=kovgaczr&dl=0"
-            target={'_blank'}
-          >
+          <a href={cv.href} download={cv.filename} aria-label="Download CV">
             <FileUser className={iconClass} />
           </a>
         </div>

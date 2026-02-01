@@ -1,12 +1,19 @@
+'use client'
+
 import Image from 'next/image'
+import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { Mail, ArrowDown } from 'lucide-react'
 import { Button } from '../ui/button'
 import Particles from '../common/particles'
+import { getCvDownload } from '@/data/cv'
 
 export default function Header() {
   const t = useTranslations('Header')
+  const params = useParams<{ locale?: string }>()
+  const locale = typeof params?.locale === 'string' ? params.locale : 'en'
+  const cv = getCvDownload(locale)
 
   return (
     <section id="Home" className="relative flex h-full min-h-svh w-full flex-col pt-20 md:pt-32 xl:pt-40">
@@ -51,8 +58,8 @@ export default function Header() {
             </Button>
             <Button size="xl" variant="outline">
               <a
-                href="https://www.dropbox.com/scl/fi/8ny7rco9z8j7b3kmmnyg0/Nicolas-Constantin-Full-Stack-Developer.pdf?rlkey=vm3mm3pu2g22qnjrtu1m6xf3l&st=kovgaczr&dl=0"
-                target="_blank"
+                href={cv.href}
+                download={cv.filename}
               >
                 {t('button2')}
               </a>
